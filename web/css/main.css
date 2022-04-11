@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #364c5a;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+}
+header {
+  background: url(../img/ancipando_portada5.jpeg);
+  height: 90vh;
+  display: flex;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section {
+  color: #364c5a;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  width: 65vw;
+  margin: auto;
+  padding: 30 px 0;
+  text-align: center;
+  font-size: 30px;
+}
+section h1 {
+  font-size: 80px;
+  font-weight: 700;
+}
+section p {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 1em 0;
+}
+.contenido {
+  text-align: center;
+  /* margin: 5em 0; */
+}
+.contenido a {
+  color: #fff;
+  text-decoration: none;
+  background: #364c5a;
+  padding: 4px 20px;
+  border-radius: 50px;
+  font-size: 30px;
+  margin: 10px;
+}
+.contenido a:hover {
+  background-color: white;
+  color: #364c5a;
+}
+.contenido2 img {
+  width: 520px;
+  height: 380px;
+  display: block;
+  margin: auto;
+}
+footer {
+  height: 10vh;
+  background-color: #08c;
+  display: flex;
+  color: #fff;
+  padding: 10px;
+}
+footer li {
+  padding: 10px 5px 10px 5px;
+}
+#canales {
+  display: flex;
+  padding-left: 1rem;
+}
+.redsocial svg {
+  fill: lightskyblue;
+  height: 20px;
+}
+.redsocial svg:hover {
+  fill: white;
+}
+.nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+@media screen and (max-width: 480px) {
+  header {
+    height: 88vh;
+  }
+  footer {
+    height: 12vh;
+  }
+  section h1 {
+    font-size: 50px;
+  }
+  section p {
+    font-size: 20px;
+  }
+  .contenido a {
+    font-size: 25px;
+  }
+  footer li {
+    padding: 10px 5px 10px 5px;
+  }
+}
