@@ -178,8 +178,8 @@
     {
       "type": "wmslayer",
       "peso": 70,
-      "nombre": "Exposición infraestructura estructuras operativas",
-      "short_abstract": "Información vectorial correspondiente a la componente del riesgo: exposición; infraestructura estructuras operativas.",
+      "nombre": "Infraestructura y estructuras operativas (exposición)",
+      "short_abstract": "Información vectorial correspondiente a la componente del riesgo: exposición. Objetos de infraestructura y estructuras operativas.",
       "class": "",
       "seccion": "exposicion_infraestructura_estructuras_operativas",
       "servicio": "wms",
@@ -189,8 +189,8 @@
     {
       "type": "wmslayer",
       "peso": 80,
-      "nombre": "Exposición infraestructura estructuras operativas",
-      "short_abstract": "Información vectorial correspondiente a la componente del riesgo: exposición; infraestructura estructuras operativas.",
+      "nombre": "Infraestructura y estructuras operativas (exposición)",
+      "short_abstract": "Información vectorial correspondiente a la componente del riesgo: exposición. Objetos de infraestructura y estructuras operativas.",
       "class": "",
       "seccion": "exposicion_infraestructura_estructuras_operativas",
       "servicio": "wms",
