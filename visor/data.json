@@ -81,7 +81,7 @@
           "attribution": "Imágenes satelitales © Esri",
           "host": "https://server.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
           "legendImg": "src/styles/images/esri.png",
-          "peso": 30,
+          "peso": 50,
           "zoom": {
             "min": 3,
             "max": 17,
@@ -97,7 +97,7 @@
           "attribution": "Mapa topográfico © Esri",
           "host": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Physical_Map/MapServer/tile/{z}/{y}/{x}",
           "legendImg": "src/styles/images/esrit.png",
-          "peso": 40,
+          "peso": 60,
           "zoom": {
             "min": 3,
             "max": 8,
@@ -108,6 +108,7 @@
         }
       ]
     },
+
     {
       "type": "wmslayer",
       "peso": 10,
@@ -123,27 +124,16 @@
       "type": "wmslayer",
       "peso": 20,
       "nombre": "Vulnerabilidad social",
-      "short_abstract": "Información vectorial correspondiente a la componente del riesgo: vulnerabilidad social (estructural).",
+      "short_abstract": "Información vectorial correspondiente a la componente del riesgo: vulnerabilidad social (estructural) y características de la población.",
       "class": "",
       "seccion": "vulnerabilidad_social",
       "servicio": "wms",
       "version": "1.3.0",
       "host": "https://riesgo.ign.gob.ar/geoserver/vulnerabilidad_social/wms"
-    },
+    },    
     {
       "type": "wmslayer",
       "peso": 30,
-      "nombre": "Población",
-      "short_abstract": "Información vectorial correspondiente a características de la población.",
-      "class": "",
-      "seccion": "vulnerabilidad_poblacion",
-      "servicio": "wms",
-      "version": "1.3.0",
-      "host": "https://riesgo.ign.gob.ar/geoserver/vulnerabilidad_poblacion/wms"
-    },
-    {
-      "type": "wmslayer",
-      "peso": 40,
       "nombre": "Amenazas y fenómenos de origen hidrometeorológico",
       "short_abstract": "Información vectorial correspondiente a amenazas y fenómenos de origen hidrometeorológico.",
       "class": "",
@@ -154,26 +144,26 @@
     },
     {
       "type": "wmslayer",
-      "peso": 50,
-      "nombre": "Amenazas y fenómenos de origen geológico",
-      "short_abstract": "Información vectorial correspondiente a amenazas y fenómenos de origen geológico.",
+      "peso": 40,
+      "nombre": "Amenazas y fenómenos de origen geodinámico",
+      "short_abstract": "Información vectorial correspondiente a amenazas y fenómenos de origen geodinámico.",
       "class": "",
-      "seccion": "amenazas_fenomenos_de_origen_geologico",
+      "seccion": "amenazas_fenomenos_de_origen_geodinamico",
       "servicio": "wms",
       "version": "1.3.0",
-      "host": "https://riesgo.ign.gob.ar/geoserver/amenazas_fenomenos_de_origen_geologico/wms"
+      "host": "https://riesgo.ign.gob.ar/geoserver/amenazas_fenomenos_de_origen_geodinamico/wms"
     },
     {
       "type": "wmslayer",
       "peso": 50,
-      "nombre": "Amenazas y fenómenos de origen geológico",
-      "short_abstract": "Información vectorial correspondiente a amenazas y fenómenos de origen geológico.",
+      "nombre": "Amenazas y fenómenos de origen físico químicos",
+      "short_abstract": "Información vectorial correspondiente a amenazas y fenómenos de origen físico químicos.",
       "class": "",
-      "seccion": "amenazas_fenomenos_de_origen_geologico",
+      "seccion": "amenazas_fenomenos_de_origen_biologico",
       "servicio": "wms",
       "version": "1.3.0",
-      "host": "https://riesgo.ign.gob.ar/geoserver/amenazas_fenomenos_de_origen_geologico/wms"
-    },
+      "host": "https://riesgo.ign.gob.ar/geoserver/amenazas_fenomenos_de_origen_fisico_quimico/wms"
+    },   
     {
       "type": "wmslayer",
       "peso": 60,
@@ -194,11 +184,11 @@
       "seccion": "exposicion_infraestructura_estructuras_operativas",
       "servicio": "wms",
       "version": "1.3.0",
-      "host": "https://riesgo.ign.gob.ar/geoserver/amenazas_fenomenos_de_origen_biologico/wms"
+      "host": "https://riesgo.ign.gob.ar/geoserver/exposicion_infraestructura_estructuras_operativas/wms"
     },
     {
       "type": "wmslayer",
-      "peso": 70,
+      "peso": 80,
       "nombre": "Exposición infraestructura estructuras operativas",
       "short_abstract": "Información vectorial correspondiente a la componente del riesgo: exposición; infraestructura estructuras operativas.",
       "class": "",
@@ -209,9 +199,9 @@
     },
     {
       "type": "wmslayer",
-      "peso": 80,
-      "nombre": "Proyecto anticipando la crecida",
-      "short_abstract": "Información vectorial correspondiente al proyecto interdisciplinario e interinstitucional Anticipando la Crecida.",
+      "peso": 90,
+      "nombre": "Proyecto Anticipando la Crecida",
+      "short_abstract": "Información geoespacial correspondiente al Proyecto interdisciplinario e interinstitucional Anticipando la Crecida (zona AMBA).",
       "class": "",
       "seccion": "proyecto_anticipando_la_crecida",
       "servicio": "wms",
@@ -219,8 +209,19 @@
       "host": "https://riesgo.ign.gob.ar/geoserver/proyecto_anticipando_la_crecida/wms"
     },
     {
+      "type": "wmslayer",
+      "peso": 100,
+      "nombre": "Proyecto Anticipando la Crecida",
+      "short_abstract": "Información geoespacial correspondiente al Proyecto interdisciplinario e interinstitucional Anticipando la Crecida (zona AMBA).",
+      "class": "",
+      "seccion": "proyecto_anticipando_la_crecida",
+      "servicio": "wms",
+      "version": "1.3.0",
+      "host": "https://riesgo.ign.gob.ar/geoserver/raster_riesgo_anticipando_crecida/wms"
+    },    
+    {
       "type": "wmts",
-      "peso": 90,
+      "peso": 110,
       "nombre": "Fotografías aéreas",
       "short_abstract": "Relevamientos fotogramétricos, ortomosaicos, etc.",
       "class": "",
@@ -231,7 +232,7 @@
     },
     {
       "type": "wmts",
-      "peso": 100,
+      "peso": 120,
       "nombre": "Fotografías aéreas",
       "short_abstract": "Relevamientos fotogramétricos, ortomosaicos, etc.",
       "class": "",
@@ -243,7 +244,7 @@
     },
     {
       "type": "wms",
-      "peso": 100,
+      "peso": 130,
       "nombre": "Fotografías aéreas",
       "short_abstract": "Relevamientos fotogramétricos, ortomosaicos, etc.",
       "class": "",
@@ -254,7 +255,7 @@
     },
     {
       "type": "wms",
-      "peso": 30,
+      "peso": 140,
       "nombre": "Modelos digitales de elevaciones",
       "short_abstract": "Modelos digitales de elevaciones",
       "class": "",
@@ -265,7 +266,7 @@
     },
     {
       "type": "wmts",
-      "peso": 30,
+      "peso": 150,
       "nombre": "Modelos digitales de elevaciones",
       "short_abstract": "Modelos digitales de elevaciones",
       "class": "",
@@ -276,7 +277,7 @@
     },
     {
       "type": "wmts",
-      "peso": 30,
+      "peso": 160,
       "nombre": "Modelos digitales de elevaciones",
       "short_abstract": "Modelos digitales de elevaciones",
       "class": "",
