@@ -17,7 +17,6 @@
           "host": "https://wms.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/capabaseargenmap@EPSG%3A3857@png/{z}/{x}/{-y}.png",
           "legendImg": "src/styles/images/argenmap.png",
           "peso": 10,
-          "selected": true,
           "zoom": {
             "min": 3,
             "max": 21,
@@ -34,6 +33,7 @@
           "host": "https://wms.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/mapabase_gris@EPSG%3A3857@png/{z}/{x}/{-y}.png",
           "legendImg": "src/styles/images/argenmap-gris.png",
           "peso": 20,
+          "selected": true,
           "zoom": {
             "min": 3,
             "max": 21,
