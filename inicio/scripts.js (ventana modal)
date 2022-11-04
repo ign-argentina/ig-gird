@@ -1,0 +1,21 @@
+function citasModals() {
+  
+  	//abrir modal
+	$('#openModal').click(function(){
+		$('#modal').css('visibility', 'visible');
+	});
+  
+	//cerar modal
+	$('#close').click(function(){
+        $('#modal').css('visibility', 'hidden');
+	});
+
+	//cerar ventana
+	$('#modal').click(function(){
+        $('#modal').css('visibility', 'hidden');
+	});
+}
+
+$(document).ready(function () {
+	citasModals();
+});
