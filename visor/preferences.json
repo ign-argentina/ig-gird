@@ -14,7 +14,7 @@
     "description": "",
     "image": ""
   },
-  "analytics_ids": [],
+  "analytics_ids": ["G-31LNMWD1PL"],
   "excluded_plugins": ["minimap"],
   "mapConfig": {
     "center": {
