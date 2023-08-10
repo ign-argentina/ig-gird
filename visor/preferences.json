@@ -53,7 +53,7 @@
     "key": ""
   }, 
   "referencias": {
-    "show": true,
+    "show": false,
     "icon": "src/config/default/styles/images/referencias.png",
     "width":"25px",
     "height":"31px"
