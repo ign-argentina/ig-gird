@@ -118,7 +118,7 @@
       "seccion": "limites_regionalizacion",
       "servicio": "wms",
       "version": "1.3.0",
-      "host": "https://riesgo.ign.gob.ar/geoserver/limites_regionalizacion/wms"
+      "host": "https://wms.ign.gob.ar/geoserver/limites_regionalizacion/wms"
     },
     {
       "type": "wmslayer",
@@ -129,7 +129,7 @@
       "seccion": "vulnerabilidad_social",
       "servicio": "wms",
       "version": "1.3.0",
-      "host": "https://riesgo.ign.gob.ar/geoserver/vulnerabilidad_social/wms"
+      "host": "https://wms.ign.gob.ar/geoserver/vulnerabilidad_social/wms"
     },    
     {
       "type": "wmslayer",
@@ -140,7 +140,7 @@
       "seccion": "amenazas_fenomenos_de_origen_hidrometeorologico",
       "servicio": "wms",
       "version": "1.3.0",
-      "host": "https://riesgo.ign.gob.ar/geoserver/amenazas_fenomenos_de_origen_hidrometeorologico/wms"
+      "host": "https://wms.ign.gob.ar/geoserver/amenazas_fenomenos_de_origen_hidrometeorologico/wms"
     },
     {
       "type": "wmslayer",
@@ -151,7 +151,7 @@
       "seccion": "amenazas_fenomenos_de_origen_geodinamico",
       "servicio": "wms",
       "version": "1.3.0",
-      "host": "https://riesgo.ign.gob.ar/geoserver/amenazas_fenomenos_de_origen_geodinamico/wms"
+      "host": "https://wms.ign.gob.ar/geoserver/amenazas_fenomenos_de_origen_geodinamico/wms"
     },
     {
       "type": "wmslayer",
@@ -162,7 +162,7 @@
       "seccion": "amenazas_fenomenos_de_origen_fisico_quimico",
       "servicio": "wms",
       "version": "1.3.0",
-      "host": "https://riesgo.ign.gob.ar/geoserver/amenazas_fenomenos_de_origen_fisico_quimico/wms"
+      "host": "https://wms.ign.gob.ar/geoserver/amenazas_fenomenos_de_origen_fisico_quimico/wms"
     },   
     {
       "type": "wmslayer",
@@ -173,7 +173,7 @@
       "seccion": "amenazas_fenomenos_de_origen_biologico",
       "servicio": "wms",
       "version": "1.3.0",
-      "host": "https://riesgo.ign.gob.ar/geoserver/amenazas_fenomenos_de_origen_biologico/wms"
+      "host": "https://wms.ign.gob.ar/geoserver/amenazas_fenomenos_de_origen_biologico/wms"
     },
     {
       "type": "wmslayer",
@@ -184,29 +184,18 @@
       "seccion": "exposicion_infraestructura_estructuras_operativas",
       "servicio": "wms",
       "version": "1.3.0",
-      "host": "https://riesgo.ign.gob.ar/geoserver/exposicion_infraestructura_estructuras_operativas/wms"
+      "host": "https://wms.ign.gob.ar/geoserver/exposicion_infraestructura_estructuras_operativas/wms"
     },
     {
       "type": "wmslayer",
       "peso": 80,
-      "nombre": "Infraestructura y estructuras operativas (exposición)",
-      "short_abstract": "Información vectorial correspondiente a la componente del riesgo: exposición. Objetos de infraestructura y estructuras operativas.",
-      "class": "",
-      "seccion": "exposicion_infraestructura_estructuras_operativas",
-      "servicio": "wms",
-      "version": "1.3.0",
-      "host": "https://wms.ign.gob.ar/geoserver/transporte/wms"
-    },
-    {
-      "type": "wmslayer",
-      "peso": 90,
       "nombre": "Proyecto Anticipando la Crecida",
       "short_abstract": "Información geoespacial correspondiente al Proyecto interdisciplinario e interinstitucional Anticipando la Crecida (zona AMBA).",
       "class": "",
       "seccion": "proyecto_anticipando_la_crecida",
       "servicio": "wms",
       "version": "1.3.0",
-      "host": "https://riesgo.ign.gob.ar/geoserver/proyecto_anticipando_la_crecida/wms"
+      "host": "https://wms.ign.gob.ar/geoserver/proyecto_anticipando_la_crecida/wms"
     },
     {
       "type": "wmslayer",
@@ -217,7 +206,7 @@
       "seccion": "proyecto_anticipando_la_crecida",
       "servicio": "wms",
       "version": "1.3.0",
-      "host": "https://riesgo.ign.gob.ar/geoserver/raster_riesgo_anticipando_crecida/wms"
+      "host": "https://imagenes.ign.gob.ar/geoserver/raster_riesgo_anticipando_crecida/wms"
     },    
     {
       "type": "wmts",
