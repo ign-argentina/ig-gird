@@ -102,27 +102,76 @@
             Activación de<br> Protocolos Red GIRCYT
             <h2>
     </div>
-    <div class="alert alert-info alert-dismissible" role="alert">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <strong>Esta sección se encuentra en construcción.</strong>
-    </div>
     <div class="row" style="background-color:#fafafa; padding:0px 20px 150px 20px;">
         <div id="menusup_copete" class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-            <p>Esta sección, se propone comunicar aquellos eventos de remoción en masa que activaron protocolos en el marco del trabajo interinstitucional mencionado. Se detallan a continuación los eventos y una breve descripción de los protocolos activados.
-            </p>
+           
+            <h4>Registro de sucesos y activacion de protocolos</h4>
+            <p>El Instituto Geográfico Nacional es integrante del Consejo Nacional de Gestión Integral del Riesgo de Desastres según la Ley 27.287 del SINAGIR. Participa activamente de la Red GIRCyT, creada también en este marco- donde tiene por objeto atender los requerimientos de información específica del Consejo, poniendo a disposición las capacidades conocimientos e información desarrollados en el ámbito científico y técnico en lo referente a la Gestión de Riesgos. <br><br> En este contexto institucional, la Coordinación de I+D participa en una serie de proyectos, en conjunto con otros organismos nacionales de Ciencia y Técnica, así como también universidades, donde se busca garantizar el manejo de la crisis y la restauración. En este sentido, a partir de esta sección, se propone comunicar aquellos eventos de remoción en masa que activaron protocolos en el marco del trabajo interinstitucional. La remoción en masa refiere a movimientos ladera abajo de una masa ya sea de roca, detritos o de tierras por efectos de la gravedad que tienen grandes posibilidades de generar daños. <br><br> Podemos clasificar a este evento según la forma de rotura, el material y el proceso de transporte, afectando áreas de diferentes maneras, ya sea por su intensidad o impacto, generando daños de diversos tipos: sociales, económicos o ambientales que devienen del tipo de material que se moviliza.<br><br>En esta sección se detallan los eventos donde el IGN participó y se realiza una descripción de los protocolos que fueron activados.</p>
+            
+
+             <ul>
+                <li>Diamante, provincia de Entre Ríos</li>
+                <li>El Chaltén, provincia de Santa Cruz</li>
+                <li>Los Toldos, provincia de Salta</li>
+                <li>Villa Constitución, provincia de Santa Fe</li>
+            </ul>
+           
+            
+            <br>
+
         </div>
         <div id="menusup_content" class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-            <h4>Registro de sucesos y activación de protocolos a la hora de identificar el movimiento en masa como amenaza</h4>
-            <p>Sección en construcción, contará con infografías de los casos de activación de protocolos.<br> </p>
-            <h4>Remoción en masa</h4>
-            <p> Diamante, provincia de Entre Ríos </p>
-            <p> El Chaltén, provincia de Santa Cruz </p>
-            <p> Los Toldos, provincia de Salta </p>
-            <p> Villa Constitución, provincia de Santa Fe </p>
+            <h4>Mapa interactivo de registro de sucesos y activación de protocolos a la hora de identificar el movimiento en masa como amenaza</h4>
+            
+            <br>
+            <script type="text/javascript" src="https://www.ign.gob.ar/argenmap2/argenmap.jquery/argenmap.jquery.min.js"></script><div class="row-fluid">
+                <div id="mapa1" class="span12" style="height:700px;"></div>
+                <!--span12--><!--span12--></div>
+                <!--row-fluid--><!--row-fluid--><script  type="text/javascript" >
+                $("#mapa1").argenmap({centro:[-43.644028,-63.896484], zoom: 4});
+                $('#mapa1').agregarMarcador({
+                lat: -32.066133,
+                lon: -60.649842,
+                nombre: 'Diamante, provincia de Entre Ríos',
+                // icono: "img/geoservicios.svg",
+                contenido: '<b>Ubicación:</b> Situada a orillas de la barranca del Río Paraná, Diamante es un municipio cabecera del departamento homónimo ubicado a 40 km al sur de la ciudad de Paraná en la provincia de Entre Ríos. Limita con los municipios de Paraná, Nogoyá y Victoria y cuenta con vías de acceso como la ruta provincial 11 y la ruta nacional 131.<br><br><b>Fecha del suceso:</b> El día 13 de octubre de 2018 se produjo una caída de la barranca a la altura del asentamiento del barrio San Roque y la estatua del Cristo Pescado.  Este evento generó una grieta de 100 metros de longitud.<br><br><b>Tipo de remoción:</b> Deslizamiento del terreno (desplazamiento de barrancas) de la costanera.<br><br><b>Respuesta:</b> Luego del deslizamiento del terreno se activó el Protocolo interinstitucional de gestión de información correspondiente a Movimientos en Masa. Como respuesta, el IGN, específicamente la Dirección de Sensores Remotos, se dirigió al lugar y realizó una serie de vuelos con Drones en la zona afectada obteniendo imágenes de alta precisión. Los trabajos fueron realizados en conjunto con la Dirección de Planificación, Investigación y Desarrollo y la Dirección Nacional de Producción Cartográfica. Gracias a esto, se obtuvieron Modelos Digitales de Elevación de 5 m de resolución y mosaicos de ortofotos de 30 cm.<br><br><b>Fuente:</b> Diario Uno Entre Ríos (27/07/19 y (9/10/2018); Ministerio de Planeamiento Infraestructura y Servicios de Entre Ríos.<p><br><img src="img/diamante_protocolo.png"/></p>'
+                
+                })
+                
+                $('#mapa1').agregarMarcador({
+                lat: -33.228392,
+                lon: -60.320361,
+                nombre: 'Villa Constitución, provincia de Santa Fe',
+                // icono: "img/geoservicios.svg",
+                contenido: '<b>Ubicación:</b> Villa Constitución es una ciudad ubicada a 228 km al sureste de la provincia de Santa Fe, cabecera del departamento de Constitución. Limita con los departamentos de Rosario, San Lorenzo, Caseros y General López y cuenta con vías de acceso como la ruta provincial 90 y la ruta nacional 18.<br><br><b>Fecha del suceso:</b> El 12 de noviembre se produjo el desmoronamiento de una barranca ubicada sobre el Río Paraná, afectando barrios vulnerables.<br><br><b>Tipo de remoción:</b> Vuelcos.<br><br><b>Respuesta:</b> No se cuenta con información.<br><br><b>Fuente:</b> Ecom Rosario; Gobierno de Santa Fe; Diario La Capital (23/11/2018).<p><br><img src="img/villaconstitucion.png"/></p>'
+                
+                })
+
+                $('#mapa1').agregarMarcador({
+                lat: -49.322614,
+                lon: -72.991222,
+                nombre: 'El Chaltén, provincia de Santa Cruz',
+                // icono: "img/geoservicios.svg",
+                contenido: '<b>Ubicación:</b> El Chaltén se encuentra al pie del Cerro Torre y del Cerro Fitz Roy. Esta pequeña localidad se presenta en la confluencia de los ríos De Las Vueltas y Fitz Roy, pertenece al departamento Lago Argentino, provincia de Santa Cruz.<br><br><b>Fecha del suceso:</b> El evento se desarrolló en la Zona Norte del Parque Nacional Los Glaciares, el día 18 de octubre de 2018.<br><br><b>Tipo de remoción:</b> Caída de rocas.<br><br><b>Respuesta:</b> En este caso, el Instituto Argentino de Nivología Glaciología y Ciencias Ambientales (IANIGLA) fue el encargado de alertar a las autoridades del Parque quienes avisaron a SINAGIR para tomar medidas.<br><br><b>Fuente:</b> Servicio Geológico Minero Argentino, 2019. Estudio de Peligrosidad Geológica de la Localidad de El Chaltén y de Procesos de Remoción en Masa de la Ladera Norte del Cerro Solo, Provincia de Santa Cruz. 110 p. Buenos Aires, Ministerio de Producción y Trabajo. Servicio Geológico Minero Argentino. Instituto de Geología y Recursos Minerales.<p><br><img src="img/chalten.png"/></p>'
+                
+                })
+
+                $('#mapa1').agregarMarcador({
+                lat: -22.2788,
+                lon: -64.991222,
+                nombre: 'Los Toldos, provincia de Salta',
+                // icono: "img/geoservicios.svg",
+                contenido: '<b>Ubicación:</b> Los Toldos es una localidad situada en el departamento Santa Victoria en el extremo noroeste de la provincia de Salta.<br><br><b>Fecha del suceso:</b> El evento se desarrolló dentro del Parque Nacional Baritú y Reserva Nacional El Nogalar de Los Toldos, el día 9 de enero de 2019.<br><br><b>Tipo de remoción:</b> Flujo de detritos.<br><br><b>Respuesta:</b> No se cuenta con información.<br><br><b>Fuente:</b> Parques Nacionales, 2019. Cierre temporario de la Reserva el Nogalar de los Toldos. Ministerio de Ambiente y Desarrollo Sostenible. Parques Nacionales.<p><br><img src="img/lostoldos.png"/></p>'
+                
+                })
+
+               
+               </script><p><small style="font-style:italic;"><strong>Fuente: IGN</strong><br/>
+               
+                * Mapa georreferenciado con  <a href="https://www.ign.gob.ar/AreaServicios/Argenmap/Introduccion"><b>ARGENMAP</b></a><br/>
+                * Las coordenadas son aproximadas, al sólo efecto de su ubicación.</small></p>
+            </div>
         </div>
-        <br>
-    </div>
-    </div>
     <footer class="container-fluid text-center full-width hidden-xs" style="position:fixed; bottom:0px; height:70px; padding-top:0px">
         <div class="col-sm-6 col-xs-7">
             <a target="_blank" href="https://www.argentina.gob.ar/defensa"><img src="img/defensamargen-30.svg" style="height:75px"></a>
