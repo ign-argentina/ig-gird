@@ -6,7 +6,7 @@
   "charts": {
     "isActive": true
   },
-  "layer_options":{
+  "layer_options": {
     "isActive": false
   },
   "metaTags": {
@@ -14,8 +14,12 @@
     "description": "",
     "image": ""
   },
-  "analytics_ids": ["G-31LNMWD1PL"],
-  "excluded_plugins": ["minimap"],
+  "analytics_ids": [
+    "G-31LNMWD1PL"
+  ],
+  "excluded_plugins": [
+    "minimap"
+  ],
   "mapConfig": {
     "center": {
       "latitude": -40,
@@ -27,13 +31,13 @@
       "max": 21
     }
   },
-  "service":{
+  "service": {
     "wmts": {
       "maxZoom": 21
     }
   },
   "showSearchBar": true,
-  "searchbar":{
+  "searchbar": {
     "isActive": true,
     "top": "5px",
     "left": "40%",
@@ -43,35 +47,35 @@
       "placeholder": "Buscar lugar..."
     }
   },
-  "geocoder":{
+  "geocoder": {
     "url": "https://api.ign.gob.ar/buscador/",
     "search": "search",
     "url_by_id": "places",
     "query": "q",
     "lang": "es",
-    "limit":5,
+    "limit": 5,
     "key": ""
-  }, 
+  },
   "referencias": {
     "show": false,
     "icon": "src/config/default/styles/images/referencias.png",
-    "width":"25px",
-    "height":"31px"
+    "width": "25px",
+    "height": "31px"
   },
   "theme": {
     "bodyBackground": "#37bbed",
     "headerBackground": "#364b60",
     "menuBackground": "#364b60",
     "activeLayer": "#cecabf",
-    "textMenu":"white",
-    "textMenuStyle":"text-shadow: #103847 1px 1px 15px",
-    "textLegendMenu":"#dddddd",
-    "textLegendMenuStyle":"text-shadow: #103847 1px 1px 15px",
-    "iconBar":"#4f4f4f"
-    },
+    "textMenu": "white",
+    "textMenuStyle": "text-shadow: #103847 1px 1px 15px",
+    "textLegendMenu": "#dddddd",
+    "textLegendMenuStyle": "text-shadow: #103847 1px 1px 15px",
+    "iconBar": "#4f4f4f"
+  },
   "logo": {
-    "title":"IG-GIRD",
-    "src": "src/config/default/styles/images/logo2.png",
+    "title": "IG-GIRD",
+    "src": "src/config/default/styles/images/Logo-MinDef-IGN-Visores.png",
     "link": "https://riesgo.ign.gob.ar/",
     "height": "",
     "width": "500px",
@@ -79,7 +83,7 @@
     "srcLogoMini": "src/config/default/styles/images/logo_RESPONSIVE.png",
     "miniHeight": "",
     "miniWidth": "",
-    "ministyle": ";"
+    "ministyle": ""
   },
   "title": "IG-GIRD",
   "website": "https://riesgo.ign.gob.ar/",
@@ -127,11 +131,14 @@
       }
     ]
   },
-  "hillshade" : {
+  "hillshade": {
     "name": "hillshade",
     "attribution": "sombra de montaña <a target='_blank' href='https://www.arcgis.com/home/item.html?id=1b243539f4514b6ba35e7d995890db1d'>©Esri</a>",
     "url": "https://services.arcgisonline.com/arcgis/rest/services/Elevation/World_Hillshade/MapServer/tile/{z}/{y}/{x}.png",
-    "addTo": ["argenmap", "argenmap_gris"],
+    "addTo": [
+      "argenmap",
+      "argenmap_gris"
+    ],
     "icon": "src/styles/images/mountains.svg",
     "switchLabel": "Agregar sombra de montaña Esri"
   },
