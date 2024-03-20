@@ -1,285 +1,300 @@
 <!DOCTYPE html>
 <html lang="es">
-   <head>
-      <title>Talleres IGN mapeo participativo</title>
-      <!-- Google Tag Manager -->
-      <script>(function (w, d, s, l, i) {
-         w[l] = w[l] || []; w[l].push({
-             'gtm.start':
-                 new Date().getTime(), event: 'gtm.js'
-         }); var f = d.getElementsByTagName(s)[0],
-             j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-         })(window, document, 'script', 'dataLayer', 'GTM-5V366L3');
-      </script>
-      <!-- End Google Tag Manager -->
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-      <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-      <meta name="description" content="Base de datos oficial y normalizada de Información Geoespacial de Gestión Integral de Riesgo de Desastres del Instituto Geográfico Nacional.">
-      <meta name="author" content="Información Geoespacial de Gestión Integral de Riesgo de Desastres del Instituto Geográfico Nacional" />
-      <meta name="keywords" Content="riesgo,desastres, gestion, IGN, geografia" />
-      <meta property="og:type" content="website">
-      <meta property="og:locale" content="es_AR">
-      <meta property="og:title" content="Información Geoespacial de Gestión de Riesgo de Desastres">
-      <meta property="og:site_name" content="Información Geoespacial de Gestión Integral de Riesgo de Desastres">
-      <meta property="og:description" content="Base de datos oficial y normalizada de IG de GIR del Instituto Geográfico Nacional">
-      <meta property="og:url" content="https://riesgo.ign.gob.ar/">
-      <meta property="og:image" itemprop="image" content="https://riesgo.ign.gob.ar/img/opengraph.jpg">
-      <meta property="og:image:secure_url" itemprop="image" content="https://riesgo.ign.gob.ar/img/opengraph.jpg">
-      <meta property="og:image:type" content="image/jpeg" />
-      <meta property="og:image:width" content="256" />
-      <meta property="og:image:height" content="256" />
-      <meta property="og:image:alt" content="Logo del Instituto Geográfico Nacional" />
-      <link rel="icon" type="image/png" sizes="196x196" href="img/favicon-196x196.png">
-      <link rel="shortcut icon" href="img/favicon.ico">
-      <link rel="canonical" href="https://riesgo.ign.gob.ar/">
-      <link rel="alternate" hreflang="x-default" href="https://riesgo.ign.gob.ar/">
-      <link rel="stylesheet" href="css/main.css">
-      <script src="https://anida.ign.gob.ar/js/jquery-3.3.1.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-      <!-- <script src="http://10.20.200.72/tmp/poncho_para_idera.css"></script> -->
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-      <style>
-         /* Remove the navbar's default margin-bottom and rounded borders */
-         .navbar {
-         margin-bottom: 0;
-         border-radius: 3px;
-         background-color: #364b60;
-         border-color: #364b60;
-         }
-         /* Add a gray background color and some padding to the footer */
-         footer {
-         background-color: #364b60;
-         padding: 25px;
-         }
-         /* IMPORTANTE */
-         /*        text-align: center; } */
-      </style>
-   </head>
-   <body>
-      <!-- Google Tag Manager (noscript) -->
-      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5V366L3" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-      <!-- End Google Tag Manager (noscript) -->
-      <!-- Menú superior -->
-      <a id="inicio"></a>
-      <nav class="navbar navbar-inverse">
-         <div class="container-fluid">
-            <div class="navbar-header">
-               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               </button>
-               <a class="navbar-brand" href="index.html"><img src="img/icono_home.svg" style="width: 25px; padding-top:0%"></a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-               <ul class="nav navbar-nav">
-                  <li><a href="acercade.html">Acerca de IG-GIRD</a></li>
-                  <li><a href="antecedentes.html">Antecedentes</a></li>
-                  <li><a href="mapeos_participativos.html">Cartografía participativa</a></li>
-                  <li><a href="activacion_protocolos.html">Activación de protocolos</a></li>
-                  <li><a href="contacto.html">Contacto y equipo</a></li>
-               </ul>
-               <!-- login derecho <ul class="nav navbar-nav navbar-right">
+
+<head>
+  <title>Talleres IGN mapeo participativo</title>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-5V366L3');
+  </script>
+  <!-- End Google Tag Manager -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <meta name="description" content="Base de datos oficial y normalizada de Información Geoespacial de Gestión Integral de Riesgo de Desastres del Instituto Geográfico Nacional.">
+  <meta name="author" content="Información Geoespacial de Gestión Integral de Riesgo de Desastres del Instituto Geográfico Nacional" />
+  <meta name="keywords" Content="riesgo,desastres, gestion, IGN, geografia" />
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:title" content="Información Geoespacial de Gestión de Riesgo de Desastres">
+  <meta property="og:site_name" content="Información Geoespacial de Gestión Integral de Riesgo de Desastres">
+  <meta property="og:description" content="Base de datos oficial y normalizada de IG de GIR del Instituto Geográfico Nacional">
+  <meta property="og:url" content="https://riesgo.ign.gob.ar/">
+  <meta property="og:image" itemprop="image" content="https://riesgo.ign.gob.ar/img/opengraph.jpg">
+  <meta property="og:image:secure_url" itemprop="image" content="https://riesgo.ign.gob.ar/img/opengraph.jpg">
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="256" />
+  <meta property="og:image:height" content="256" />
+  <meta property="og:image:alt" content="Logo del Instituto Geográfico Nacional" />
+  <link rel="icon" type="image/png" sizes="196x196" href="img/favicon-196x196.png">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="canonical" href="https://riesgo.ign.gob.ar/">
+  <link rel="alternate" hreflang="x-default" href="https://riesgo.ign.gob.ar/">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://anida.ign.gob.ar/js/jquery-3.3.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <!-- <script src="http://10.20.200.72/tmp/poncho_para_idera.css"></script> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 3px;
+      background-color: #364b60;
+      border-color: #364b60;
+    }
+
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #364b60;
+    }
+
+    /* IMPORTANTE */
+    /*        text-align: center; } */
+  </style>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5V366L3" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <!-- Menú superior -->
+  <a id="inicio"></a>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><img src="img/icono_home.svg" style="width: 25px; padding-top:0%"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="acercade.html">Acerca de IG-GIRD</a></li>
+          <li><a href="antecedentes.html">Antecedentes</a></li>
+          <li><a href="mapeos_participativos.html">Cartografía participativa</a></li>
+          <li><a href="activacion_protocolos.html">Activación de protocolos</a></li>
+          <li><a href="contacto.html">Contacto y equipo</a></li>
+        </ul>
+        <!-- login derecho <ul class="nav navbar-nav navbar-right">
                   <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                   </ul>-->
-            </div>
-         </div>
-      </nav>
-      <div id="menusup_titlezone" class="jumbotron">
-         <h3><a href="index.html" style="color:#e1a346;">IG-GIRD / </a><a href="mapeos_participativos.html" style="color:#e1a346;">Cartografía participativa / </a><a href="proyectos_transferencia_ign.html" style="color:#e1a346;">Talleres IGN mapeo participativo
-            </a>
-         </h3>
-         <h2>
-         Talleres IGN <br>mapeo participativo
-         <h2>
       </div>
+    </div>
+  </nav>
+  <div id="menusup_titlezone" class="jumbotron">
+    <h3><a href="index.html" style="color:#e1a346;">IG-GIRD / </a><a href="mapeos_participativos.html" style="color:#e1a346;">Cartografía participativa / </a><a href="proyectos_transferencia_ign.html" style="color:#e1a346;">Talleres IGN mapeo participativo
+      </a>
+    </h3>
+    <h2>
+      Talleres IGN <br>mapeo participativo
+      <h2>
+  </div>
+  <br>
+  <div class="row" style="background-color:#fafafa; padding:0px 20px 150px 20px;margin: 0;">
+    <div id="menusup_copete" class="col-xs col-sm-4 col-md-4 col-lg-4">
+      <p id="anida_hoy_descripcion">
+        <br> En esta sección se presenta una experiencia de transferencia a docentes de nivel primario y secundario que tiene como objetivo introducir conceptos básicos de cartografía e información geoespacial como herramientas para el conocimiento del territorio, con especial foco en la temática del riesgo de desastres.
+      </p>
       <br>
-      <div class="row" style="background-color:#fafafa; padding:0px 20px 150px 20px">
-         <div id="menusup_copete" class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-            <p id="anida_hoy_descripcion">
-               <br> En esta sección se presenta una experiencia de transferencia a docentes de nivel primario y secundario que tiene como objetivo introducir conceptos básicos de cartografía e información geoespacial como herramientas para el conocimiento del territorio, con especial foco en la temática del riesgo de desastres.
-            </p>
-            <br>
-            <p>
-            <h4>Objetivos</h4>
-            <p>
-            <ul>
-               <li>Introducir conceptos básicos sobre cartografía tanto en formato papel como digital y los Sistemas de Información Geográfica, como herramientas para la elaboración de mapas de riesgo.</li>
-               <li>Difundir los recursos y productos disponibles en la web del IGN para su utilización en el aula y la generación de cartografía temática.</li>
-               <li>Introducir las técnicas y la importancia de la cartografía participativa para aumentar el entendimiento sobre el ambiente y el riesgo de desastres.</li>
-            </ul>
-            <br>
-            Con este proyecto se pretende brindar conceptos básicos que hagan a la construcción del Riesgo para luego introducir técnicas que creemos que son de importancia, en el marco de la cartografía participativa como parte de la metodología de trabajo. Entendemos también que los mapas son herramientas fundamentales en el aula que sirven para construir sólidos conocimientos en el proceso de enseñanza-aprendizaje. 
-            </p>
-            <br>            
-            <p style="text-align:center"><img src="img/neuquen_san_martin_andes2.jpg" class="img-responsive center-block" alt="Imagen de docentes realizando una actividad de mapeo participativo." /> </p>
-            </p>
-            <br>            
-            <h4>Alcance de los talleres</h4>
-            <p> El área de I+D del IGN se dedica, entre otros temas, a desarrollar proyectos sobre cartografía e información geoespacial como herramientas para la gestión integral del riesgo de desastres. Con el propósito de acercar a docentes estas herramientas, el IGN brindó talleres, en conjunto con la Secretaría de Estado de Planificación y Acción para el Desarrollo (COPADE) de la provincia del Neuquén, en cada una de las microrregiones de la provincia.  Estas instancias fueron planeadas para introducir a un público principalmente docente, de todos los niveles de educación formal, herramientas metodológicas y prácticas, adaptadas para las diversas realidades educativas.
-               <br>
-               <br>
-               Desde el 2022 hasta el 2023 se han realizado 5 talleres en las localidades de la <strong>ciudad de Neuquén</strong> (microrregión de Confluencia con 107 asistentes), <strong>San Martín de los Andes</strong> (microrregión Sur con 53 asistentes), <strong>Chos Malal</strong> (microrregión Noroeste con 55 asistentes), <strong>Zapala</strong> (microrregión Centro con 68 asistentes) y <strong>Rincón de los Sauces</strong> (microrregión Este con 94 asistentes). El total de las personas participantes de estas localidades y zonas aledañas sumó a 377 participantes que lograron nutrirse de las temáticas previamente mencionadas.
-               <br>
-               <br>
-               La temática central del trabajo se origina en la pregunta fundamental: <strong>“¿Qué sabes del lugar donde habitas?”.</strong> Esto permite identificar amenazas y vulnerabilidades a nivel provincial y local que sean significativas para todos/as los/as participantes.
-               <br>
-               <br>
-               Las y los docentes lograron manifestar espacialmente cómo perciben el riesgo de desastres en el área de estudio a escalas diversas, e incorporaron herramientas y conocimientos suficientes para trasladar la experiencia a sus estudiantes en las aulas.
-               <br>
-               <br>
-               La Cartografía Participativa (CP) es una línea de investigación de reciente incorporación en el IGN. En este caso en particular se aplica como una herramienta de trabajo en el aula, con el fin de introducir a las nuevas generaciones en el conocimiento del territorio y los problemas ambientales a partir del uso de cartografía digital y papel.
-               <br>
-               <br>
-               Asimismo, desde el IGN nos acercamos a la CP con el objetivo de acompañar el proceso de producción y publicación de la información resultante de diversas experiencias de mapeos participativos, y en un futuro comenzar a pensar de qué manera estos productos podrían fortalecer, complementar y enriquecer la información geoespacial oficial.
-               <br>
-               <br>
-            <p style="text-align:center"><img src="img/mapas_vectores_ejemplo.png" class="img-responsive center-block" alt="Imagen de mapa resultado de mapeo participativo." /> </p>
-            </p>
-            <br>
-            <p>
-               Para conocer más respecto a los análisis elaborados por cada experiencia, se los invita a descargar los resultados desagregados:
-               <br>
-            <ul>
-               <li> <a target="_blank" href="pdf/ciudad_neuquen_resultados.pdf"> Ciudad de Neuquén</a></li>
-               <li> <a target="_blank" href="pdf/san_martin_resultados.pdf"> San Martín de los Andes</a></li>
-               <li> <a target="_blank" href="pdf/chos_malal_resultados.pdf"> Chos Malal</a></li>
-               <li> <a target="_blank" href="pdf/zapala_resultados.pdf"> Zapala</a></li>
-               <li> <a target="_blank" href="pdf/rincon_de_los_sauces_resultados.pdf"> Rincón de los Sauces</a></li>
-            </ul>
-            <br>  
-            </p>
-            <h4>Equipo</h4>
-            <p> El equipo se compone de personal técnico, investigadores/as y docentes pertenecientes a la Dirección de Planificación, Investigación y Desarrollo (IGN). 
-               <br>
-               <br>        
-            </p>
-         </div>
-         <div id="menusup_content" class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-            <p style="text-align:center"><img src="img/mapa_neuquen_sintesis.png" class="img-responsive center-block" alt="Resultado de análisis síntesis de amenazas identificadas en mapeos participativos." /> </p>
-            <h4>Metodología</h4>
-            <p>La metodología empleada en estos talleres se divide en <strong>tres etapas fundamentales:</strong> 
-               <br>
-            <ul>
-               <li>Etapa de planificación de las intervenciones.</li>
-               <li>Etapa del taller propiamente dicho, en donde se interactúa con los/as participantes.</li>
-               <li>Etapa del procesamiento y análisis de los resultados obtenidos.</li>
-            </ul>
-            </p>
-            <p>A lo largo de todo el proyecto se utilizan técnicas de Cartografía Participativa (CP), entendiendo a la misma como un proceso de construcción de mapas donde se combina el conocimiento local con información y tecnología geográfica, pretendiendo generar mayor entendimiento en la relación que se construye entre una comunidad y su territorio. Tomando esto como eje, antes de dar inicio al taller, se ejecuta la fase inicial de este proceso donde se llevan a cabo una serie de actividades de planificación esenciales con el fin de alcanzar los objetivos previstos. Para eso, se elabora cartografía correspondiente a la localidad en dónde se desarrollará el taller, así como también se tienen en cuenta aquellas zonas aledañas de donde provienen los y las participantes. Cada mapa elaborado busca incorporar objetos geográficos que sean de interés para los y las participantes a fin de trabajar con la mayor cantidad de información posible.
-               <br>
-               <br>
-               La segunda etapa se desarrolla durante los talleres, en ellos se propone una secuencia didáctica que parte de una introducción sobre conceptos básicos de cartografía, riesgo de desastres y mapeo participativo con orientación a estudiantes de diferentes niveles educativos, estos son la base que guía la comprensión de la temática a abordar. Luego dicha secuencia pasa a niveles prácticos a fin de indagar de manera colaborativa sobre problemáticas que se presentan en el territorio que habitan. La propuesta de la actividad se basa en el conocimiento local y apunta a identificar en el mapa:
-               <br>
-            <ul>
-               <li>Amenazas o eventos tanto de origen físico natural como antrópicos.</li>
-               <li>Sus impactos en la población.</li>
-               <li>Características sociales de un territorio conocido por los participantes.</li>
-            </ul>
-            <br>
-            Se trabaja a escala provincial con la identificación de amenazas y a escala local identificando los componentes del riesgo: amenazas, vulnerabilidad social, concluyendo en mapas síntesis de niveles de riesgo.
-            Una vez identificados, la actividad consiste en exponer y debatir los trabajos elaborados grupalmente.
-            <br>
-            <br>
-            En el próximo apartado se detalla la etapa de procesamiento y análisis de los resultados.
-            <br>
-            <br>
-            </p>
-            <!-- Large modal -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Ver más</button>
-            <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-               <div class="modal-dialog modal-lg" role="document">
-                  <div class="modal-content">
-                     <div class="modal-body">
-                        <h4 class="modal-title">Pasos metodológicos seguidos en las dos instancias de trabajo</h4>
-                        <h4 style="color:#364b60";>Fase previa</h4>
-                        <ul>
-                           <li>Seleccionar la escala de trabajo según los objetivos.</li>
-                           <li>Preparar materiales según el formato de trabajo participativo.</li>
-                           <li>Establecer la clasificación de amenazas y tipos de vulnerabilidad a trabajar.</li>
-                        </ul>
-                        <h4 style="color:#364b60";>Día 1</h4>
-                        <ul>
-                           <li>Se recuperaron conceptos como: ¿Qué entendemos por riesgo? ¿Cúales son sus orígenes? ¿Para qué sirve un mapeo participativo?¿Cúal es su importancia?</li>
-                           <li>Reconocimiento de los elementos de un mapa.</li>
-                           <li>Utilidad de un SIG.</li>
-                           <li>Trabajo a escala provincial: Identificación de amenazas en el territorio del Neuquén.</li>
-                           <li>Ponderación a través de la metodología semáforo.</li>
-                        </ul>
-                        <h4 style="color:#364b60";>Día 2</h4>
-                        <ul>
-                           <li>Identificar y enumerar las amenazas qué pueda llegar a enfrentar la provincia del Neuquén.</li>
-                           <li>Definir el criterio de ponderación qué se considere conveniente.</li>
-                           <li>Plasmar la iconografía georreferenciada en los mapas.</li>
-                           <li>Presentar la cartografía elaborada al resto del grupo.</li>
-                        </ul>
-                     </div>
-                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Volver</button>
-                     </div>
-                  </div>
-                  <!-- /.modal-content -->
-               </div>
+      <p>
+      <h4>Objetivos</h4>
+      <p>
+      <ul>
+        <li>Introducir conceptos básicos sobre cartografía tanto en formato papel como digital y los Sistemas de Información Geográfica, como herramientas para la elaboración de mapas de riesgo.</li>
+        <li>Difundir los recursos y productos disponibles en la web del IGN para su utilización en el aula y la generación de cartografía temática.</li>
+        <li>Introducir las técnicas y la importancia de la cartografía participativa para aumentar el entendimiento sobre el ambiente y el riesgo de desastres.</li>
+      </ul>
+      <br>
+      Con este proyecto se pretende brindar conceptos básicos que hagan a la construcción del Riesgo para luego introducir técnicas que creemos que son de importancia, en el marco de la cartografía participativa como parte de la metodología de trabajo. Entendemos también que los mapas son herramientas fundamentales en el aula que sirven para construir sólidos conocimientos en el proceso de enseñanza-aprendizaje.
+      </p>
+      <br>
+      <p style="text-align:center"><img src="img/neuquen_san_martin_andes2.jpg" class="img-responsive center-block" alt="Imagen de docentes realizando una actividad de mapeo participativo." /> </p>
+      </p>
+      <br>
+      <h4>Alcance de los talleres</h4>
+      <p> El área de I+D del IGN se dedica, entre otros temas, a desarrollar proyectos sobre cartografía e información geoespacial como herramientas para la gestión integral del riesgo de desastres. Con el propósito de acercar a docentes estas herramientas, el IGN brindó talleres, en conjunto con la Secretaría de Estado de Planificación y Acción para el Desarrollo (COPADE) de la provincia del Neuquén, en cada una de las microrregiones de la provincia. Estas instancias fueron planeadas para introducir a un público principalmente docente, de todos los niveles de educación formal, herramientas metodológicas y prácticas, adaptadas para las diversas realidades educativas.
+        <br>
+        <br>
+        Desde el 2022 hasta el 2023 se han realizado 5 talleres en las localidades de la <strong>ciudad de Neuquén</strong> (microrregión de Confluencia con 107 asistentes), <strong>San Martín de los Andes</strong> (microrregión Sur con 53 asistentes), <strong>Chos Malal</strong> (microrregión Noroeste con 55 asistentes), <strong>Zapala</strong> (microrregión Centro con 68 asistentes) y <strong>Rincón de los Sauces</strong> (microrregión Este con 94 asistentes). El total de las personas participantes de estas localidades y zonas aledañas sumó a 377 participantes que lograron nutrirse de las temáticas previamente mencionadas.
+        <br>
+        <br>
+        La temática central del trabajo se origina en la pregunta fundamental: <strong>“¿Qué sabes del lugar donde habitas?”.</strong> Esto permite identificar amenazas y vulnerabilidades a nivel provincial y local que sean significativas para todos/as los/as participantes.
+        <br>
+        <br>
+        Las y los docentes lograron manifestar espacialmente cómo perciben el riesgo de desastres en el área de estudio a escalas diversas, e incorporaron herramientas y conocimientos suficientes para trasladar la experiencia a sus estudiantes en las aulas.
+        <br>
+        <br>
+        La Cartografía Participativa (CP) es una línea de investigación de reciente incorporación en el IGN. En este caso en particular se aplica como una herramienta de trabajo en el aula, con el fin de introducir a las nuevas generaciones en el conocimiento del territorio y los problemas ambientales a partir del uso de cartografía digital y papel.
+        <br>
+        <br>
+        Asimismo, desde el IGN nos acercamos a la CP con el objetivo de acompañar el proceso de producción y publicación de la información resultante de diversas experiencias de mapeos participativos, y en un futuro comenzar a pensar de qué manera estos productos podrían fortalecer, complementar y enriquecer la información geoespacial oficial.
+        <br>
+        <br>
+      <p style="text-align:center"><img src="img/mapas_vectores_ejemplo.png" class="img-responsive center-block" alt="Imagen de mapa resultado de mapeo participativo." /> </p>
+      </p>
+      <br>
+      <p>
+        Para conocer más respecto a los análisis elaborados por cada experiencia, se los invita a descargar los resultados desagregados:
+        <br>
+      <ul>
+        <li> <a target="_blank" href="pdf/ciudad_neuquen_resultados.pdf"> Ciudad de Neuquén</a></li>
+        <li> <a target="_blank" href="pdf/san_martin_resultados.pdf"> San Martín de los Andes</a></li>
+        <li> <a target="_blank" href="pdf/chos_malal_resultados.pdf"> Chos Malal</a></li>
+        <li> <a target="_blank" href="pdf/zapala_resultados.pdf"> Zapala</a></li>
+        <li> <a target="_blank" href="pdf/rincon_de_los_sauces_resultados.pdf"> Rincón de los Sauces</a></li>
+      </ul>
+      <br>
+      </p>
+      <h4>Equipo</h4>
+      <p> El equipo se compone de personal técnico, investigadores/as y docentes pertenecientes a la Dirección de Planificación, Investigación y Desarrollo (IGN).
+        <br>
+        <br>
+      </p>
+    </div>
+    <div id="menusup_content" class="col-xs col-sm-8 col-md-8 col-lg-8">
+      <p style="text-align:center"><img src="img/mapa_neuquen_sintesis.png" class="img-responsive center-block" alt="Resultado de análisis síntesis de amenazas identificadas en mapeos participativos." /> </p>
+      <h4>Metodología</h4>
+      <p>La metodología empleada en estos talleres se divide en <strong>tres etapas fundamentales:</strong>
+        <br>
+      <ul>
+        <li>Etapa de planificación de las intervenciones.</li>
+        <li>Etapa del taller propiamente dicho, en donde se interactúa con los/as participantes.</li>
+        <li>Etapa del procesamiento y análisis de los resultados obtenidos.</li>
+      </ul>
+      </p>
+      <p>A lo largo de todo el proyecto se utilizan técnicas de Cartografía Participativa (CP), entendiendo a la misma como un proceso de construcción de mapas donde se combina el conocimiento local con información y tecnología geográfica, pretendiendo generar mayor entendimiento en la relación que se construye entre una comunidad y su territorio. Tomando esto como eje, antes de dar inicio al taller, se ejecuta la fase inicial de este proceso donde se llevan a cabo una serie de actividades de planificación esenciales con el fin de alcanzar los objetivos previstos. Para eso, se elabora cartografía correspondiente a la localidad en dónde se desarrollará el taller, así como también se tienen en cuenta aquellas zonas aledañas de donde provienen los y las participantes. Cada mapa elaborado busca incorporar objetos geográficos que sean de interés para los y las participantes a fin de trabajar con la mayor cantidad de información posible.
+        <br>
+        <br>
+        La segunda etapa se desarrolla durante los talleres, en ellos se propone una secuencia didáctica que parte de una introducción sobre conceptos básicos de cartografía, riesgo de desastres y mapeo participativo con orientación a estudiantes de diferentes niveles educativos, estos son la base que guía la comprensión de la temática a abordar. Luego dicha secuencia pasa a niveles prácticos a fin de indagar de manera colaborativa sobre problemáticas que se presentan en el territorio que habitan. La propuesta de la actividad se basa en el conocimiento local y apunta a identificar en el mapa:
+        <br>
+      <ul>
+        <li>Amenazas o eventos tanto de origen físico natural como antrópicos.</li>
+        <li>Sus impactos en la población.</li>
+        <li>Características sociales de un territorio conocido por los participantes.</li>
+      </ul>
+      <br>
+      Se trabaja a escala provincial con la identificación de amenazas y a escala local identificando los componentes del riesgo: amenazas, vulnerabilidad social, concluyendo en mapas síntesis de niveles de riesgo.
+      Una vez identificados, la actividad consiste en exponer y debatir los trabajos elaborados grupalmente.
+      <br>
+      <br>
+      En el próximo apartado se detalla la etapa de procesamiento y análisis de los resultados.
+      <br>
+      <br>
+      </p>
+      <!-- Large modal -->
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Ver más</button>
+      <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <h4 class="modal-title">Pasos metodológicos seguidos en las dos instancias de trabajo</h4>
+              <h4 style="color:#364b60" ;>Fase previa</h4>
+              <ul>
+                <li>Seleccionar la escala de trabajo según los objetivos.</li>
+                <li>Preparar materiales según el formato de trabajo participativo.</li>
+                <li>Establecer la clasificación de amenazas y tipos de vulnerabilidad a trabajar.</li>
+              </ul>
+              <h4 style="color:#364b60" ;>Día 1</h4>
+              <ul>
+                <li>Se recuperaron conceptos como: ¿Qué entendemos por riesgo? ¿Cúales son sus orígenes? ¿Para qué sirve un mapeo participativo?¿Cúal es su importancia?</li>
+                <li>Reconocimiento de los elementos de un mapa.</li>
+                <li>Utilidad de un SIG.</li>
+                <li>Trabajo a escala provincial: Identificación de amenazas en el territorio del Neuquén.</li>
+                <li>Ponderación a través de la metodología semáforo.</li>
+              </ul>
+              <h4 style="color:#364b60" ;>Día 2</h4>
+              <ul>
+                <li>Identificar y enumerar las amenazas qué pueda llegar a enfrentar la provincia del Neuquén.</li>
+                <li>Definir el criterio de ponderación qué se considere conveniente.</li>
+                <li>Plasmar la iconografía georreferenciada en los mapas.</li>
+                <li>Presentar la cartografía elaborada al resto del grupo.</li>
+              </ul>
             </div>
-            <h3><br><strong>Análisis del procesamiento de datos</strong></h3>
-            <p> A partir de las cinco experiencias en los talleres, se avanzó hacia la tercera fase del proyecto: el procesamiento y análisis de los resultados obtenidos. Aunque la Cartografía Participativa (CP) brinda a los participantes la libertad de plasmar su percepción geográfica y social, su procesamiento requiere ciertas precauciones para evitar malinterpretaciones y la transformación de datos subjetivos y no verificados en conclusiones finales.</p>
-            <br>
-            <p> Con el propósito de superar estas dificultades, el equipo IGN llevó a cabo un conteo, categorización y clasificación de cada amenaza identificada en diferentes microrregiones. Luego de este proceso, surgieron los primeros resultados que demuestran la presencia de mayor o menor probabilidad de que ocurran eventos adversos o peligrosos, entendidos como amenazas.</p>
-            <br>
-            <p>
-               De esta manera, se procedió a la asignación de ponderaciones a estos eventos, basándose en valores numéricos correspondientes a los niveles de peligrosidad atribuidos a cada evento: alto (15), medio (10), bajo (5) o ausencia de asignación (1). Este enfoque metodológico permite destacar de manera efectiva aquellas amenazas que son percibidas como las más devastadoras, recurrentes y con un impacto negativo significativo.
-               <br>
-               Esta etapa de procesamiento y análisis se traduce en la obtención de información más estructurada y cuantificable, permitiendo acercarse de manera más sólida, a través de este enfoque metodológico, a la realidad vivida y percibida por los participantes.
-            </p>
-            <br>
-            <p>
-               Al inicio de esta página se puede observar un mapa síntesis de la información recolectada  en los cuatro primeros encuentros realizados, la subdivisión en microrregiones es propuesta por COPADE: ciudad de Neuquén (microrregión Confluencia) y las localidades de  San Martín  de los Andes (microrregión Sur), Chos Malal (microrregión Noroeste) y Zapala (microrregión centro).
-               <br>
-            </p>
-            <br>
-            <p>
-               Los resultados obtenidos responden a la percepción que tuvieron los y las participantes de las problemáticas que atraviesan en su vida cotidiana. Cabe aclarar que este resultado responde a la cuantificación de amenazas sin ponderar. Entre las posibles lecturas que ofrece la cartografía generada, se destaca que la microrregión sur es la que presenta mayor cantidad de amenazas percibidas de todos los tipos, en el total de los cuatro talleres; si bien internamente las de tipo geológicas y químicas son las preponderantes.
-               <br>
-            </p>
-            <br>
-            <p>
-               Por otra parte, las microrregiones de Confluencia y Noroeste tienen una presencia media de amenazas. Sin embargo, en Confluencia, donde se encuentra la capital provincial, las amenazas químicas tienen mayor relevancia mientras que en la zona montañosa del Noroeste son de tipo geológicas e hidrometeorológicas. 
-               Este tipo de análisis por microrregión o por distribución de tipos de amenazas en el territorio, son algunas posibilidades de interpretación de resultados que permiten comprender los imaginarios de la población local, a ello se podría sumar una validación de datos que permitan contrastar y evaluar las necesidades de quienes habitan el territorio.
-               <br>            
-            </p>
-            
-            <p> Una vez que la metodología de mapeo y los conceptos de amenaza se ven aplicados a escala provincial, se repite la metodología de peligros y se avanza a identificar niveles y sectores con diversas formas de vulnerabilidad a escala local. Luego de que el mapa refleja ambos aspectos del riesgo, se lleva a cabo una superposición de información para alcanzar el objetivo final de delinear áreas de riesgo y fundamentar esta demarcación en función de la gravedad de sus componentes.</p>
-            <br>
-            <p> A continuación, se presenta un mapa a escala local de la ciudad de Neuquén realizado durante la experiencia de junio 2022, en el cual se digitalizaron las amenazas percibidas por la comunidad junto con su nivel de peligrosidad, las áreas vulnerables clasificadas en niveles bajo, medio y alto, y por último, el riesgo resultante.</p>
-            <br>
-            <p style="text-align:center"><img src="img/mapeo_neuquen_local.png" class="img-responsive center-block" alt="Imagen de docentes realizando una actividad de mapeo participativo."/></p>
-            
-         </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Volver</button>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
       </div>
-      <footer class="container-fluid text-center full-width hidden-xs" style="position:fixed; bottom:0px; height:70px; padding-top:0px">
-         <div class="col-sm-6 col-xs-7">
-            <a target="_blank" href="https://www.argentina.gob.ar/defensa"><img src="img/defensamargen-30.svg" style="height:75px"></a>
-            <a target="_blank" href="http://www.ign.gob.ar/"><img src="img/ign-logo-footer.svg" style="height:65px"></a>
-         </div>
-         <div class="col-sm-6 col-xs-7">
-            <a target="_blank" href="https://www.facebook.com/institutogeograficonacional"><img src="img/redes-blanco-01.svg" style="height:50px"></a>
-            <a target="_blank" href="https://twitter.com/ARGENTINAIGN"><img src="img/redes-blanco-02.svg" style="height:50px"></a>
-            <a target="_blank" href="https://www.instagram.com/argentinaignoficial/"><img src="img/redes-blanco-03.svg" style="height:50px"></a>
-            <a target="_blank" href="https://www.youtube.com/user/IgnArgentina"><img src="img/redes-blanco-04.svg" style="height:50px"></a>
-         </div>
-      </footer>
-      <footer class="container-fluid text-center full-width visible-xs" style="position:fixed; bottom:0px; height:70px; padding-top:0px">
-         <div class="container-fluid col-sm-6 col-xs-5" style="padding:0px"><a target="_blank" href="https://www.argentina.gob.ar/defensa"><img src="img/defensamargen-30.svg" style="height:75px"></a></div>
-         <div class="col-sm-6 col-xs-7">
-            <a target="_blank" href="http://www.ign.gob.ar/"><img src="http://anida.ign.gob.ar/img/ign-logo-footer.svg" style="height:40px"></a>
-            <a target="_blank" href="https://www.facebook.com/institutogeograficonacional"><img src="http://anida.ign.gob.ar/img/redes-blanco-01.svg" style="height:20px"></a>
-            <a target="_blank" href="https://twitter.com/ARGENTINAIGN"><img src="http://anida.ign.gob.ar/img/redes-blanco-02.svg" style="height:20px"></a>
-            <a target="_blank" href="https://www.instagram.com/argentinaignoficial/"><img src="http://anida.ign.gob.ar/img/redes-blanco-03.svg" style="height:20px"></a>
-            <a target="_blank" href="https://www.youtube.com/user/IgnArgentina"><img src="http://anida.ign.gob.ar/img/redes-blanco-04.svg" style="height:20px"></a>
-         </div>
-      </footer>
-   </body>
+      <h3><br><strong>Análisis del procesamiento de datos</strong></h3>
+      <p> A partir de las cinco experiencias en los talleres, se avanzó hacia la tercera fase del proyecto: el procesamiento y análisis de los resultados obtenidos. Aunque la Cartografía Participativa (CP) brinda a los participantes la libertad de plasmar su percepción geográfica y social, su procesamiento requiere ciertas precauciones para evitar malinterpretaciones y la transformación de datos subjetivos y no verificados en conclusiones finales.</p>
+      <br>
+      <p> Con el propósito de superar estas dificultades, el equipo IGN llevó a cabo un conteo, categorización y clasificación de cada amenaza identificada en diferentes microrregiones. Luego de este proceso, surgieron los primeros resultados que demuestran la presencia de mayor o menor probabilidad de que ocurran eventos adversos o peligrosos, entendidos como amenazas.</p>
+      <br>
+      <p>
+        De esta manera, se procedió a la asignación de ponderaciones a estos eventos, basándose en valores numéricos correspondientes a los niveles de peligrosidad atribuidos a cada evento: alto (15), medio (10), bajo (5) o ausencia de asignación (1). Este enfoque metodológico permite destacar de manera efectiva aquellas amenazas que son percibidas como las más devastadoras, recurrentes y con un impacto negativo significativo.
+        <br>
+        Esta etapa de procesamiento y análisis se traduce en la obtención de información más estructurada y cuantificable, permitiendo acercarse de manera más sólida, a través de este enfoque metodológico, a la realidad vivida y percibida por los participantes.
+      </p>
+      <br>
+      <p>
+        Al inicio de esta página se puede observar un mapa síntesis de la información recolectada en los cuatro primeros encuentros realizados, la subdivisión en microrregiones es propuesta por COPADE: ciudad de Neuquén (microrregión Confluencia) y las localidades de San Martín de los Andes (microrregión Sur), Chos Malal (microrregión Noroeste) y Zapala (microrregión centro).
+        <br>
+      </p>
+      <br>
+      <p>
+        Los resultados obtenidos responden a la percepción que tuvieron los y las participantes de las problemáticas que atraviesan en su vida cotidiana. Cabe aclarar que este resultado responde a la cuantificación de amenazas sin ponderar. Entre las posibles lecturas que ofrece la cartografía generada, se destaca que la microrregión sur es la que presenta mayor cantidad de amenazas percibidas de todos los tipos, en el total de los cuatro talleres; si bien internamente las de tipo geológicas y químicas son las preponderantes.
+        <br>
+      </p>
+      <br>
+      <p>
+        Por otra parte, las microrregiones de Confluencia y Noroeste tienen una presencia media de amenazas. Sin embargo, en Confluencia, donde se encuentra la capital provincial, las amenazas químicas tienen mayor relevancia mientras que en la zona montañosa del Noroeste son de tipo geológicas e hidrometeorológicas.
+        Este tipo de análisis por microrregión o por distribución de tipos de amenazas en el territorio, son algunas posibilidades de interpretación de resultados que permiten comprender los imaginarios de la población local, a ello se podría sumar una validación de datos que permitan contrastar y evaluar las necesidades de quienes habitan el territorio.
+        <br>
+      </p>
+
+      <p> Una vez que la metodología de mapeo y los conceptos de amenaza se ven aplicados a escala provincial, se repite la metodología de peligros y se avanza a identificar niveles y sectores con diversas formas de vulnerabilidad a escala local. Luego de que el mapa refleja ambos aspectos del riesgo, se lleva a cabo una superposición de información para alcanzar el objetivo final de delinear áreas de riesgo y fundamentar esta demarcación en función de la gravedad de sus componentes.</p>
+      <br>
+      <p> A continuación, se presenta un mapa a escala local de la ciudad de Neuquén realizado durante la experiencia de junio 2022, en el cual se digitalizaron las amenazas percibidas por la comunidad junto con su nivel de peligrosidad, las áreas vulnerables clasificadas en niveles bajo, medio y alto, y por último, el riesgo resultante.</p>
+      <br>
+      <p style="text-align:center"><img src="img/mapeo_neuquen_local.png" class="img-responsive center-block" alt="Imagen de docentes realizando una actividad de mapeo participativo." /></p>
+
+    </div>
+  </div>
+  <footer class="container-fluid text-center full-width hidden-xs">
+    <div class="col-sm-6 col-xs-7">
+      <div style="float: left; padding: 5px;">
+        <a target="_blank" href="http://www.ign.gob.ar/"><img src="img/ign-logo-footer.svg" style="height:65px"></a>
+        <a target="_blank" href="https://www.argentina.gob.ar/defensa"><img src="img/logo mindef - blanco- variable 1.svg" style="height:65px"></a>
+      </div>
+    </div>
+    <div class="col-sm-6 col-xs-7">
+      <div style="float: right; padding: 5px;">
+        <a target="_blank" href="https://www.facebook.com/institutogeograficonacional"><img src="img/redes-blanco-01.svg" style="height:50px"></a>
+        <a target="_blank" href="https://twitter.com/ARGENTINAIGN"><img src="img/redes-blanco-02.svg" style="height:50px"></a>
+        <a target="_blank" href="https://www.instagram.com/argentinaignoficial/"><img src="img/redes-blanco-03.svg" style="height:50px"></a>
+        <a target="_blank" href="https://www.youtube.com/user/IgnArgentina"><img src="img/redes-blanco-04.svg" style="height:50px"></a>
+      </div>
+    </div>
+  </footer>
+
+  <footer class="container-fluid text-center full-width visible-xs">
+    <div class="col" style="padding:0px">
+      <div style="float: left; padding: 20px;">
+        <a target="_blank" href="http://www.ign.gob.ar/"><img src="http://anida.ign.gob.ar/img/ign-logo-footer.svg" style="height:40px"></a>
+        <a target="_blank" href="https://www.argentina.gob.ar/defensa"><img src="img/logo mindef - blanco- variable 1.svg" style="height:40px"></a>
+      </div>
+    </div>
+    <div class="col" style="float: right;">
+      <div style="float: right; padding: 20px;">
+        <a target="_blank" href="https://www.facebook.com/institutogeograficonacional"><img src="http://anida.ign.gob.ar/img/redes-blanco-01.svg" style="height:20px"></a>
+        <a target="_blank" href="https://twitter.com/ARGENTINAIGN"><img src="http://anida.ign.gob.ar/img/redes-blanco-02.svg" style="height:20px"></a>
+        <a target="_blank" href="https://www.instagram.com/argentinaignoficial/"><img src="http://anida.ign.gob.ar/img/redes-blanco-03.svg" style="height:20px"></a>
+        <a target="_blank" href="https://www.youtube.com/user/IgnArgentina"><img src="http://anida.ign.gob.ar/img/redes-blanco-04.svg" style="height:20px"></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

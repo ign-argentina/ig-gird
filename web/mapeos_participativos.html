@@ -1,186 +1,202 @@
 <!DOCTYPE html>
 <html lang="es">
-   <head>
-      <title>Cartografía participativa</title>
-      <!-- Google Tag Manager -->
-      <script>(function (w, d, s, l, i) {
-         w[l] = w[l] || []; w[l].push({
-             'gtm.start':
-                 new Date().getTime(), event: 'gtm.js'
-         }); var f = d.getElementsByTagName(s)[0],
-             j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-         })(window, document, 'script', 'dataLayer', 'GTM-5V366L3');
-      </script>
-      <!-- End Google Tag Manager -->
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-      <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-      <meta name="description" content="Base de datos oficial y normalizada de Información Geoespacial de Gestión Integral de Riesgo de Desastres del Instituto Geográfico Nacional.">
-      <meta name="author" content="Información Geoespacial de Gestión Integral de Riesgo de Desastres del Instituto Geográfico Nacional" />
-      <meta name="keywords" Content="riesgo,desastres, gestion, IGN, geografia" />
-      <meta property="og:type" content="website">
-      <meta property="og:locale" content="es_AR">
-      <meta property="og:title" content="Información Geoespacial de Gestión de Riesgo de Desastres">
-      <meta property="og:site_name" content="Información Geoespacial de Gestión Integral de Riesgo de Desastres">
-      <meta property="og:description" content="Base de datos oficial y normalizada de IG de GIR del Instituto Geográfico Nacional">
-      <meta property="og:url" content="https://riesgo.ign.gob.ar/">
-      <meta property="og:image" itemprop="image" content="https://riesgo.ign.gob.ar/img/opengraph.jpg">
-      <meta property="og:image:secure_url" itemprop="image" content="https://riesgo.ign.gob.ar/img/opengraph.jpg">
-      <meta property="og:image:type" content="image/jpeg" />
-      <meta property="og:image:width" content="256" />
-      <meta property="og:image:height" content="256" />
-      <meta property="og:image:alt" content="Logo del Instituto Geográfico Nacional" />
-      <link rel="icon" type="image/png" sizes="196x196" href="img/favicon-196x196.png">
-      <link rel="shortcut icon" href="img/favicon.ico">
-      <link rel="canonical" href="https://riesgo.ign.gob.ar/">
-      <link rel="alternate" hreflang="x-default" href="https://riesgo.ign.gob.ar/">
-      <link rel="stylesheet" href="css/main.css">
-      <script src="https://anida.ign.gob.ar/js/jquery-3.3.1.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-      <!-- <script src="http://10.20.200.72/tmp/poncho_para_idera.css"></script> -->
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-      <style>
-         /* Remove the navbar's default margin-bottom and rounded borders */
-         .navbar {
-         margin-bottom: 0;
-         border-radius: 3px;
-         background-color: #364b60;
-         border-color: #364b60;
-         }
-         /* Add a gray background color and some padding to the footer */
-         footer {
-         background-color: #364b60;
-         padding: 25px;
-         }
-         /* IMPORTANTE */
-         /*        text-align: center; } */
-      </style>
-   </head>
-   <body>
-      <!-- Google Tag Manager (noscript) -->
-      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5V366L3" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-      <!-- End Google Tag Manager (noscript) -->
-      <!-- Menú superior -->
-      <a id="inicio"></a>
-      <nav class="navbar navbar-inverse">
-         <div class="container-fluid">
-            <div class="navbar-header">
-               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               </button>
-               <a class="navbar-brand" href="index.html"><img src="img/icono_home.svg" style="width: 25px; padding-top:0%"></a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-               <ul class="nav navbar-nav">
-                  <li><a href="acercade.html">Acerca de IG-GIRD</a></li>
-                  <li><a href="antecedentes.html">Antecedentes</a></li>
-                  <li><a href="mapeos_participativos.html">Cartografía participativa</a></li>
-                  <li><a href="activacion_protocolos.html">Activación de protocolos</a></li>
-                  <li><a href="contacto.html">Contacto y equipo</a></li>
-               </ul>
-               <!-- login derecho <ul class="nav navbar-nav navbar-right">
+
+<head>
+  <title>Cartografía participativa</title>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-5V366L3');
+  </script>
+  <!-- End Google Tag Manager -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <meta name="description" content="Base de datos oficial y normalizada de Información Geoespacial de Gestión Integral de Riesgo de Desastres del Instituto Geográfico Nacional.">
+  <meta name="author" content="Información Geoespacial de Gestión Integral de Riesgo de Desastres del Instituto Geográfico Nacional" />
+  <meta name="keywords" Content="riesgo,desastres, gestion, IGN, geografia" />
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:title" content="Información Geoespacial de Gestión de Riesgo de Desastres">
+  <meta property="og:site_name" content="Información Geoespacial de Gestión Integral de Riesgo de Desastres">
+  <meta property="og:description" content="Base de datos oficial y normalizada de IG de GIR del Instituto Geográfico Nacional">
+  <meta property="og:url" content="https://riesgo.ign.gob.ar/">
+  <meta property="og:image" itemprop="image" content="https://riesgo.ign.gob.ar/img/opengraph.jpg">
+  <meta property="og:image:secure_url" itemprop="image" content="https://riesgo.ign.gob.ar/img/opengraph.jpg">
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="256" />
+  <meta property="og:image:height" content="256" />
+  <meta property="og:image:alt" content="Logo del Instituto Geográfico Nacional" />
+  <link rel="icon" type="image/png" sizes="196x196" href="img/favicon-196x196.png">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="canonical" href="https://riesgo.ign.gob.ar/">
+  <link rel="alternate" hreflang="x-default" href="https://riesgo.ign.gob.ar/">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://anida.ign.gob.ar/js/jquery-3.3.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <!-- <script src="http://10.20.200.72/tmp/poncho_para_idera.css"></script> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 3px;
+      background-color: #364b60;
+      border-color: #364b60;
+    }
+
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #364b60;
+    }
+
+    /* IMPORTANTE */
+    /*        text-align: center; } */
+  </style>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5V366L3" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <!-- Menú superior -->
+  <a id="inicio"></a>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><img src="img/icono_home.svg" style="width: 25px; padding-top:0%"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="acercade.html">Acerca de IG-GIRD</a></li>
+          <li><a href="antecedentes.html">Antecedentes</a></li>
+          <li><a href="mapeos_participativos.html">Cartografía participativa</a></li>
+          <li><a href="activacion_protocolos.html">Activación de protocolos</a></li>
+          <li><a href="contacto.html">Contacto y equipo</a></li>
+        </ul>
+        <!-- login derecho <ul class="nav navbar-nav navbar-right">
                   <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                   </ul>-->
-            </div>
-         </div>
-      </nav>
-      <div id="menusup_titlezone" class="jumbotron">
-         <h2>
-         Cartografía <br> participativa
-         <h2>
       </div>
-      <div class="row" style="background-color:#fafafa; padding:0px 20px 150px 20px;">
-      <div id="menusup_copete" class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-         <p> En el marco de la Cartografía Participativa (CP), consideramos que el mapeo es un proceso de construcción colectiva que sirve para crear, a través de la representación, mayor entendimiento de las relaciones entre una comunidad y su territorio, y así dimensionar problemáticas en él a partir de  la combinación del conocimiento local con información y tecnología geográfica (dos Santos y Listo 2020; Chambers 2006; Gil Grandett y Gómez Ayola 2019). Esta metodología brinda prácticas de acción y reflexión sobre los usos que los actores sociales hacen del espacio, viéndose materializados los problemas y las experiencias de quienes habitan el lugar.
-            <br>
-            <br>
-            Partimos de la idea de que los mapas son representaciones que devienen de la ideología de quienes los construyen. Las personas participantes en un mapeo participativo crean y modifican los mapas, según sus propias formas de representación, mediante imágenes, íconos, dibujos y textos que permitan la comunicación y difusión de significados y sentidos. Así, se propone la creación de un espacio de interacción donde la participación se convierte en algo central para entender la mirada que tiene cada participante con respecto a su territorio (Iconoclastas, 2013).
-            <br>
-            <br>
-            Desde el IGN nos acercamos a la cartografía participativa con el objetivo de acompañar el proceso de producción y publicación de la información resultante de diversas experiencias de mapeos participativos, y en un futuro comenzar a pensar de qué manera estos productos podrían fortalecer, complementar y enriquecer la información geoespacial oficial.
-            <br>            
-            <br>
-         </p>
-         <p>
-         <h4>Proyectos de transferencia</h4>
-         Como organismo de ciencia y técnica, proponemos desde el IGN, desarrollar actividades de extensión a la comunidad, 
-         de manera de generar espacios de transferencia del conocimiento, a partir del abordaje de metodologías de cartografía participativa, 
-         como una forma de acercar a la comunidad a las ciencias geográficas y cartográficas, como a los recursos y servicios que brinda el organismo.
-         <br>
-         <br>
-         En esta sección se presentan dos proyectos que involucran técnicas de mapeo participativo para la gestión del riesgo de desastres, y en los cuales el IGN participa de manera colaborativa con otras instituciones. Por medio de la plataforma IG-GIRD hacemos disponible el trabajo relevado en campo. Esta sección está en constante actualización, ya que ambos proyectos se encuentran en desarrollo actualmente.
-         <br>
-        </p>
-         <p>
-         <h3><strong>Talleres IGN mapeo participativo</strong></h3>
-         Se presenta una experiencia de transferencia a docentes de nivel primario y secundario que tiene como objetivo 
-         introducir conceptos básicos de cartografía e información geoespacial como herramientas para el conocimiento 
-         del territorio, con especial foco en la temática del riesgo de desastres.
-         <a href="proyectos_transferencia_ign.html" target="_blank;" style="color:#e1a346;">
-         Leer más sobre Talleres IGN mapeo participativo.</a>
-         <br>
-         </p>
-         <p>
-         <h3><strong>Proyecto Anticipando la Crecida</strong></h3>
-         “Anticipando la crecida” es un proyecto interdisciplinario e intersectorial, cuyo objetivo general es contribuir en la comprensión de la gestión de riesgos ante desastres asociados a eventos hidro-meteorológicos en el Área Metropolitana de Buenos Aires,
-         la Cuenca del Río Luján y Río Areco y el Delta del Paraná entre otros lugares.
-         La premisa del proyecto es que mediante el diálogo entre diferentes actores locales involucrados
-         y el sector académico-científico es posible co-producir conocimiento acerca de cómo se mueve
-         el agua en un territorio para fortalecer sistemas de alertas temprana. En este marco,
-         mediante talleres participativos, se busca poner al
-         mismo nivel de diálogo conocimientos comunitarios
-         locales sobre inundaciones, e información técnica
-         específica sobre monitoreo, alertas y pronósticos. Los talleres se enfocan en sectores urbanos y sectores rurales, fundamentalmente en espacios educativos, centros barriales, e instancias de gobierno municipal como por ejemplo defensas civiles, entre otros.
-         <a href="anticipando_crecida_ign.html" target="_blank;" style="color:#e1a346;">
-         Leer más sobre Anticipando la Crecida.</a>
-         <br>
-         </p>
+    </div>
+  </nav>
+  <div id="menusup_titlezone" class="jumbotron">
+    <h2>
+      Cartografía <br> participativa
+      <h2>
+  </div>
+  <div class="row" style="background-color:#fafafa; padding:0px 20px 150px 20px; margin: 0;">
+    <div id="menusup_copete" class="col-xs col-sm-4 col-md-4 col-lg-4">
+      <p> En el marco de la Cartografía Participativa (CP), consideramos que el mapeo es un proceso de construcción colectiva que sirve para crear, a través de la representación, mayor entendimiento de las relaciones entre una comunidad y su territorio, y así dimensionar problemáticas en él a partir de la combinación del conocimiento local con información y tecnología geográfica (dos Santos y Listo 2020; Chambers 2006; Gil Grandett y Gómez Ayola 2019). Esta metodología brinda prácticas de acción y reflexión sobre los usos que los actores sociales hacen del espacio, viéndose materializados los problemas y las experiencias de quienes habitan el lugar.
+        <br>
+        <br>
+        Partimos de la idea de que los mapas son representaciones que devienen de la ideología de quienes los construyen. Las personas participantes en un mapeo participativo crean y modifican los mapas, según sus propias formas de representación, mediante imágenes, íconos, dibujos y textos que permitan la comunicación y difusión de significados y sentidos. Así, se propone la creación de un espacio de interacción donde la participación se convierte en algo central para entender la mirada que tiene cada participante con respecto a su territorio (Iconoclastas, 2013).
+        <br>
+        <br>
+        Desde el IGN nos acercamos a la cartografía participativa con el objetivo de acompañar el proceso de producción y publicación de la información resultante de diversas experiencias de mapeos participativos, y en un futuro comenzar a pensar de qué manera estos productos podrían fortalecer, complementar y enriquecer la información geoespacial oficial.
+        <br>
+        <br>
+      </p>
+      <p>
+      <h4>Proyectos de transferencia</h4>
+      Como organismo de ciencia y técnica, proponemos desde el IGN, desarrollar actividades de extensión a la comunidad,
+      de manera de generar espacios de transferencia del conocimiento, a partir del abordaje de metodologías de cartografía participativa,
+      como una forma de acercar a la comunidad a las ciencias geográficas y cartográficas, como a los recursos y servicios que brinda el organismo.
+      <br>
+      <br>
+      En esta sección se presentan dos proyectos que involucran técnicas de mapeo participativo para la gestión del riesgo de desastres, y en los cuales el IGN participa de manera colaborativa con otras instituciones. Por medio de la plataforma IG-GIRD hacemos disponible el trabajo relevado en campo. Esta sección está en constante actualización, ya que ambos proyectos se encuentran en desarrollo actualmente.
+      <br>
+      </p>
+      <p>
+      <h3><strong>Talleres IGN mapeo participativo</strong></h3>
+      Se presenta una experiencia de transferencia a docentes de nivel primario y secundario que tiene como objetivo
+      introducir conceptos básicos de cartografía e información geoespacial como herramientas para el conocimiento
+      del territorio, con especial foco en la temática del riesgo de desastres.
+      <a href="proyectos_transferencia_ign.html" target="_blank;" style="color:#e1a346;">
+        Leer más sobre Talleres IGN mapeo participativo.</a>
+      <br>
+      </p>
+      <p>
+      <h3><strong>Proyecto Anticipando la Crecida</strong></h3>
+      “Anticipando la crecida” es un proyecto interdisciplinario e intersectorial, cuyo objetivo general es contribuir en la comprensión de la gestión de riesgos ante desastres asociados a eventos hidro-meteorológicos en el Área Metropolitana de Buenos Aires,
+      la Cuenca del Río Luján y Río Areco y el Delta del Paraná entre otros lugares.
+      La premisa del proyecto es que mediante el diálogo entre diferentes actores locales involucrados
+      y el sector académico-científico es posible co-producir conocimiento acerca de cómo se mueve
+      el agua en un territorio para fortalecer sistemas de alertas temprana. En este marco,
+      mediante talleres participativos, se busca poner al
+      mismo nivel de diálogo conocimientos comunitarios
+      locales sobre inundaciones, e información técnica
+      específica sobre monitoreo, alertas y pronósticos. Los talleres se enfocan en sectores urbanos y sectores rurales, fundamentalmente en espacios educativos, centros barriales, e instancias de gobierno municipal como por ejemplo defensas civiles, entre otros.
+      <a href="anticipando_crecida_ign.html" target="_blank;" style="color:#e1a346;">
+        Leer más sobre Anticipando la Crecida.</a>
+      <br>
+      </p>
+    </div>
+    <div id="menusup_content" class="col-xs col-sm-8 col-md-8 col-lg-8">
+      <p style="text-align:center;"><img src="img/talleres_ign_chosmalal.png" class="img-responsive" alt="Docentes realizando una actividad de cartografía participativa." /></p>
+      <br>
+      <p style="text-align:center;"><img src="img/anticipando_crecida_ign_collage.png" class="img-responsive" alt="Estudiantes realizando una actividad de cartografía participativa." /> </p>
+      <br>
+      <p><strong>Bibliografía</strong>
+        <br>
+        <br>
+        Chambers, R. (2006) El mapeo participativo y los sistemas de información geográfica: ¿De quién son los mapas? ¿Quién se empodera y quién se desempodera? ¿Quién gana y quién pierde?, Instituto de Estudios para el Desarrollo Universidad de Sussex Brighton BN1 9RE, Reino Unido.3.
+        <br>
+        <br>
+        dos Santos, A. F. R y Listo, F.L.R (2020) Mapeamento participativo de risco a escorregamentos no Municipio de Quipapá, zona da mata sul de pernambuco. En: Retratos de Geografía: Olhares através das Geotecnologías, Capítulo 12, año 2020, pp.129-139
+        <br>
+        <br>
+        Gil Grandett N. I. y Gómez Ayola, J.I.(2019) La cartografía participativa como herramienta para la acción política, dos estudios de caso en espacios rurales y urbanos en Colombia. Revista del Departamento de Geografía. FFyH – UNC. Año 7 (12), 290-31.
+        <br>
+        <br>
+        Iconoclasistas (2013) Manual de mapeo colectivo. Recursos cartográficos críticos para procesos territoriales de creación colaborativa. Buenos Aires: Tinta Limón.
+      </p>
+    </div>
+  </div>
+  <footer class="container-fluid text-center full-width hidden-xs">
+    <div class="col-sm-6 col-xs-7">
+      <div style="float: left; padding: 5px;">
+        <a target="_blank" href="http://www.ign.gob.ar/"><img src="img/ign-logo-footer.svg" style="height:65px"></a>
+        <a target="_blank" href="https://www.argentina.gob.ar/defensa"><img src="img/logo mindef - blanco- variable 1.svg" style="height:65px"></a>
       </div>
-      <div id="menusup_content" class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-         <p style="text-align:center;"><img src="img/talleres_ign_chosmalal.png" class="img-responsive" alt="Docentes realizando una actividad de cartografía participativa."/></p>
-         <br>
-         <p style="text-align:center;"><img src="img/anticipando_crecida_ign_collage.png" class="img-responsive" alt="Estudiantes realizando una actividad de cartografía participativa."/> </p>         
-         <br>
-         <p><strong>Bibliografía</strong>
-            <br>
-            <br>
-            Chambers, R. (2006) El mapeo participativo y los sistemas de información geográfica: ¿De quién son los mapas? ¿Quién se empodera y quién se desempodera? ¿Quién gana y quién pierde?, Instituto de Estudios para el Desarrollo Universidad de Sussex Brighton BN1 9RE, Reino Unido.3.
-            <br>
-            <br>
-            dos Santos, A. F. R y Listo, F.L.R (2020) Mapeamento participativo de risco a escorregamentos no Municipio de Quipapá, zona da mata sul de pernambuco. En: Retratos de Geografía: Olhares através das Geotecnologías, Capítulo 12, año 2020, pp.129-139
-            <br>
-            <br>
-            Gil Grandett N. I. y Gómez Ayola, J.I.(2019) La cartografía participativa como herramienta para la acción política, dos estudios de caso en espacios rurales y urbanos en Colombia. Revista del Departamento de Geografía. FFyH – UNC. Año 7 (12), 290-31.
-            <br>
-            <br>
-            Iconoclasistas (2013) Manual de mapeo colectivo. Recursos cartográficos críticos para procesos territoriales de creación colaborativa. Buenos Aires: Tinta Limón.
-         </p>
+    </div>
+    <div class="col-sm-6 col-xs-7">
+      <div style="float: right; padding: 5px;">
+        <a target="_blank" href="https://www.facebook.com/institutogeograficonacional"><img src="img/redes-blanco-01.svg" style="height:50px"></a>
+        <a target="_blank" href="https://twitter.com/ARGENTINAIGN"><img src="img/redes-blanco-02.svg" style="height:50px"></a>
+        <a target="_blank" href="https://www.instagram.com/argentinaignoficial/"><img src="img/redes-blanco-03.svg" style="height:50px"></a>
+        <a target="_blank" href="https://www.youtube.com/user/IgnArgentina"><img src="img/redes-blanco-04.svg" style="height:50px"></a>
       </div>
-      <footer class="container-fluid text-center full-width hidden-xs" style="position:fixed; bottom:0px; height:70px; padding-top:0px">
-         <div class="col-sm-6 col-xs-7">
-            <a target="_blank" href="https://www.argentina.gob.ar/defensa"><img src="img/defensamargen-30.svg" style="height:75px"></a>
-            <a target="_blank" href="http://www.ign.gob.ar/"><img src="img/ign-logo-footer.svg" style="height:65px"></a>
-         </div>
-         <div class="col-sm-6 col-xs-7">
-            <a target="_blank" href="https://www.facebook.com/institutogeograficonacional"><img src="img/redes-blanco-01.svg" style="height:50px"></a>
-            <a target="_blank" href="https://twitter.com/ARGENTINAIGN"><img src="img/redes-blanco-02.svg" style="height:50px"></a>
-            <a target="_blank" href="https://www.instagram.com/argentinaignoficial/"><img src="img/redes-blanco-03.svg" style="height:50px"></a>
-            <a target="_blank" href="https://www.youtube.com/user/IgnArgentina"><img src="img/redes-blanco-04.svg" style="height:50px"></a>
-         </div>
-      </footer>
-      <footer class="container-fluid text-center full-width visible-xs" style="position:fixed; bottom:0px; height:70px; padding-top:0px">
-         <div class="container-fluid col-sm-6 col-xs-5" style="padding:0px"><a target="_blank" href="https://www.argentina.gob.ar/defensa"><img src="img/defensamargen-30.svg" style="height:75px"></a></div>
-         <div class="col-sm-6 col-xs-7">
-            <a target="_blank" href="http://www.ign.gob.ar/"><img src="http://anida.ign.gob.ar/img/ign-logo-footer.svg" style="height:40px"></a>
-            <a target="_blank" href="https://www.facebook.com/institutogeograficonacional"><img src="http://anida.ign.gob.ar/img/redes-blanco-01.svg" style="height:20px"></a>
-            <a target="_blank" href="https://twitter.com/ARGENTINAIGN"><img src="http://anida.ign.gob.ar/img/redes-blanco-02.svg" style="height:20px"></a>
-            <a target="_blank" href="https://www.instagram.com/argentinaignoficial/"><img src="http://anida.ign.gob.ar/img/redes-blanco-03.svg" style="height:20px"></a>
-            <a target="_blank" href="https://www.youtube.com/user/IgnArgentina"><img src="http://anida.ign.gob.ar/img/redes-blanco-04.svg" style="height:20px"></a>
-         </div>
-      </footer>
-   </body>
+    </div>
+  </footer>
+
+  <footer class="container-fluid text-center full-width visible-xs">
+    <div class="col" style="padding:0px">
+      <div style="float: left; padding: 20px;">
+        <a target="_blank" href="http://www.ign.gob.ar/"><img src="http://anida.ign.gob.ar/img/ign-logo-footer.svg" style="height:40px"></a>
+        <a target="_blank" href="https://www.argentina.gob.ar/defensa"><img src="img/logo mindef - blanco- variable 1.svg" style="height:40px"></a>
+      </div>
+    </div>
+    <div class="col" style="float: right;">
+      <div style="float: right; padding: 20px;">
+        <a target="_blank" href="https://www.facebook.com/institutogeograficonacional"><img src="http://anida.ign.gob.ar/img/redes-blanco-01.svg" style="height:20px"></a>
+        <a target="_blank" href="https://twitter.com/ARGENTINAIGN"><img src="http://anida.ign.gob.ar/img/redes-blanco-02.svg" style="height:20px"></a>
+        <a target="_blank" href="https://www.instagram.com/argentinaignoficial/"><img src="http://anida.ign.gob.ar/img/redes-blanco-03.svg" style="height:20px"></a>
+        <a target="_blank" href="https://www.youtube.com/user/IgnArgentina"><img src="http://anida.ign.gob.ar/img/redes-blanco-04.svg" style="height:20px"></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
