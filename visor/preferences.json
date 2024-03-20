@@ -75,7 +75,7 @@
   },
   "logo": {
     "title": "IG-GIRD",
-    "src": "src/config/default/styles/images/Logo-MinDef-IGN-Visores.png",
+    "src": "visor/styles/images/Logo-MinDef-IGN-Visores.png",
     "link": "https://riesgo.ign.gob.ar/",
     "height": "",
     "width": "500px",
