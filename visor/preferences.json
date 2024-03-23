@@ -75,15 +75,15 @@
   },
   "logo": {
     "title": "IG-GIRD",
-    "src": "src/config/default/styles/images/Logo-MinDef-IGN-Visores.png",
     "link": "https://riesgo.ign.gob.ar/",
-    "height": "",
-    "width": "500px",
+    "src": "https://static.ign.gob.ar/img/logo/Logo-MinDef-IGN-Visores.svg",
     "style": "",
-    "srcLogoMini": "src/config/default/styles/images/logo_RESPONSIVE.png",
+    "height": "49px",
+    "width": "200px",
+    "srcLogoMini": "https://static.ign.gob.ar/img/logo/LogoIGN_Blanco_SinTexto.svg",
+    "ministyle": "",
     "miniHeight": "",
-    "miniWidth": "",
-    "ministyle": ""
+    "miniWidth": ""
   },
   "title": "IG-GIRD",
   "website": "https://riesgo.ign.gob.ar/",
