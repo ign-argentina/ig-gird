@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <title>Riesgo de Dengue en Argentina</title>
+      <!-- Google Tag Manager -->
+      <script>(function (w, d, s, l, i) {
+         w[l] = w[l] || []; w[l].push({
+           'gtm.start':
+             new Date().getTime(), event: 'gtm.js'
+         }); var f = d.getElementsByTagName(s)[0],
+           j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+             'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+         })(window, document, 'script', 'dataLayer', 'GTM-5V366L3');
+      </script>
+      <!-- End Google Tag Manager -->
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+      <meta name="description" content="Base de datos oficial y normalizada de Información Geoespacial de Gestión Integral de Riesgo de Desastres del Instituto Geográfico Nacional.">
+      <meta name="author" content="Información Geoespacial de Gestión Integral de Riesgo de Desastres del Instituto Geográfico Nacional" />
+      <meta name="keywords" Content="riesgo,desastres, gestion, IGN, geografia" />
+      <meta property="og:type" content="website">
+      <meta property="og:locale" content="es_AR">
+      <meta property="og:title" content="Información Geoespacial de Gestión de Riesgo de Desastres">
+      <meta property="og:site_name" content="Información Geoespacial de Gestión Integral de Riesgo de Desastres">
+      <meta property="og:description" content="Base de datos oficial y normalizada de IG de GIR del Instituto Geográfico Nacional">
+      <meta property="og:url" content="https://riesgo.ign.gob.ar/">
+      <meta property="og:image" itemprop="image" content="https://riesgo.ign.gob.ar/img/opengraph.jpg">
+      <meta property="og:image:secure_url" itemprop="image" content="https://riesgo.ign.gob.ar/img/opengraph.jpg">
+      <meta property="og:image:type" content="image/jpeg" />
+      <meta property="og:image:width" content="256" />
+      <meta property="og:image:height" content="256" />
+      <meta property="og:image:alt" content="Logo del Instituto Geográfico Nacional" />
+      <link rel="icon" type="image/png" sizes="196x196" href="img/favicon-196x196.png">
+      <link rel="shortcut icon" href="img/favicon.ico">
+      <link rel="canonical" href="https://riesgo.ign.gob.ar/">
+      <link rel="alternate" hreflang="x-default" href="https://riesgo.ign.gob.ar/">
+      <link rel="stylesheet" href="css/main.css">
+      <script src="https://anida.ign.gob.ar/js/jquery-3.3.1.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      <!-- Script para gráficos -->
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <!-- Plugin para etiquetas fijas -->
+      <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+      <!-- <script src="http://10.20.200.72/tmp/poncho_para_idera.css"></script> -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+      <style>
+         /* Remove the navbar's default margin-bottom and rounded borders */
+         .navbar {
+         margin-bottom: 0;
+         border-radius: 3px;
+         background-color: #364b60;
+         border-color: #364b60;
+         }
+         /* Add a gray background color and some padding to the footer */
+         footer {
+         background-color: #364b60;
+         }
+         /* IMPORTANTE */
+         /*        text-align: center; } */
+      </style>
+   </head>
+   <body>
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5V366L3" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+      <!-- Menú superior -->
+      <a id="inicio"></a>
+      <nav class="navbar navbar-inverse">
+         <div class="container-fluid">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand" href="index.html"><img src="img/icono_home.svg" style="width: 25px; padding-top:0%"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+               <ul class="nav navbar-nav">
+                  <li><a href="acercade.html">Acerca de IG-GIRD</a></li>
+                  <li><a href="antecedentes.html">Antecedentes</a></li>
+                  <li><a href="mapeos_participativos.html">Cartografía participativa</a></li>
+                  <li><a href="proyectos_especiales.html">Proyectos especiales</a></li>
+                  <li><a href="contacto.html">Contacto y equipo</a></li>
+               </ul>
+               <!-- login derecho <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                  </ul>-->
+            </div>
+         </div>
+      </nav>
+      <div id="menusup_titlezone" class="jumbotron">
+         <h3><a href="index.html" style="color:#e1a346;">IG-GIRD / </a><a href="proyectos_especiales.html" style="color:#e1a346;">Proyectos especiales / </a><a href="riesgo_dengue.html" style="color:#e1a346;">Desarrollo de un Indicador de Riesgo de Dengue en Argentina
+            </a>
+         </h3>
+         <h2>
+         Desarrollo de un Indicador de <br>Riesgo de Dengue en Argentina
+         <h2>
+      </div>
+      <br>
+      <div class="row" style="background-color:#fafafa; padding:0px 20px 150px 20px;margin: 0;">
+         <div id="menusup_copete" class="col-xs col-sm-4 col-md-4 col-lg-4">
+            <p id="anida_hoy_descripcion">
+               <br> En esta sección se presenta un indicador que mide el riesgo de contraer dengue en Argentina, para el Noroeste y Noreste del país, trasmitido principalmente por el vector <em>Aedes aegypti</em>, por ser las zonas que han evidenciado la mayor presencia de casos en los últimos cinco años. El Gráfico 1 muestra los casos totales de Dengue en Argentina, pero al analizar la distribución de casos a nivel departamental se observa que el mayor porcentaje corresponde a las provincias del NEA y NOA. En el visor de mapas de riesgo en IG-GIRD puede observarse la distribución por departamentos a lo largo de los años.
+            </p>
+            
+            <br>
+            <p>
+            <h4>Gráfico 1: Evolución de casos de dengue</h4>
+            <p>
+               <canvas id="myChart" style="width: 100%; max-width: 700px; margin: auto; display:inline-flex;"></canvas>
+               <script>
+                  // Datos del gráfico
+                  var xValues = ["2018", "2019", "2020", "2021", "2022", "2023"];
+                  var yValues = [220, 141, 46676, 2395, 752, 73309];
+                  var barColors = ["#D8E2DC", "#B7CDB9", "#A3C4BC", "#9DB7B0", "#C8D9C4", "#E2F0CB"]; // Tonos crema-verdes
+                  
+                  // Creación del gráfico
+                  new Chart("myChart", {
+                      type: "bar",
+                      data: {
+                          labels: xValues,
+                          datasets: [{
+                              backgroundColor: barColors,
+                              data: yValues,
+                          }]
+                      },
+                      options: {
+                          responsive: true,
+                          
+                          plugins: {
+                              legend: {
+                                  display: false // Oculta la leyenda
+                              },
+                              title: {
+                                  display: true,
+                                  text: "Evolución casos de Dengue por año",
+                                  font: {
+                                      size: 16
+                                  }
+                              },
+                              // Configura el plugin datalabels para mostrar etiquetas fijas
+                              datalabels: {
+                                  anchor: 'end', // Ubicación al final de la barra
+                                  align: 'end',
+                                  color: '#000', // Color negro para las etiquetas
+                                  formatter: function(value) {
+                                      return value.toLocaleString(); // Formato con separadores de miles
+                                  },
+                                  font: {
+                                      size: 12,
+                                      weight: 'bold'
+                                  }
+                              }
+                          },
+                          scales: {
+                              y: {
+                                  beginAtZero: true,
+                                  ticks: {
+                                      callback: function(value) {
+                                          return value.toLocaleString(); // Eje Y con separador de miles
+                                      }
+                                  }
+                              }
+                          }
+                      },
+                      plugins: [ChartDataLabels] // Activa el plugin
+                  });
+               </script>
+               <br>               
+            </p>
+            <p>
+               Fuente: Sistema de Información. MAyDS, 2023.
+               <br>
+            </p>
+            <br>
+            <h4>Objetivos</h4>
+            <ul>
+               <li>Elaborar un indicador que exprese los niveles de riesgo de contraer dengue por departamento en las regiones del NEA y el NOA.</li>
+               <li>Construir cartografía temática por departamento analizando los niveles de amenaza y vulnerabilidad hacia el interior de cada provincia.</li>
+               <li>Generar cartografía temática por departamento relacionada con las amenazas y la vulnerabilidad en las provincias argentinas que conforman el NEA (Misiones, Corrientes, Chaco y Formosa) y el NOA (Jujuy, Salta, Catamarca y La Rioja).</li>
+            </ul>
+            <br>
+            <h4>Metodología</h4>
+            <br>
+            <p>
+               La metodología empleada en este indicador se divide en tres etapas:
+            </p>
+            <ul>
+               <li>Etapa de búsqueda bibliográfica sobre elaboración de indicadores vinculados a Riesgo Biológico.</li>
+               <li>Etapa de selección de variables consideradas determinantes para generar escenarios propicios para el Riesgo.</li>
+               <li>Etapa del procesamiento y análisis de la información y los resultados obtenidos.</li>
+            </ul>
+            <br>
+            <p>
+               En la <strong>primera etapa</strong> se llevó a cabo una revisión exhaustiva de estudios previos existentes que permiten comprender cómo se han abordado los riesgos biológicos en contextos similares. La revisión bibliográfica permite recopilar variables utilizadas en investigaciones anteriores a fin de elaborar indicadores vinculados a la temática. Luego, a lo largo de la <strong>segunda etapa</strong> se seleccionaron las variables clave que permitieron analizar la amenaza y la vulnerabilidad del área elegida. La elección es fundamental para definir posteriormente el nivel de riesgo ya que permite focalizar el análisis en los aspectos más críticos y que tienen mayor relevancia para el contexto específico de estudio. Para determinar el nivel de amenaza se consideraron factores como las condiciones climáticas (temperatura, precipitación y vapor de agua) propicios para el desarrollo del virus en el mosquito y su posterior proliferación, elementos claves para la transmisión del dengue.
+            </p>
+            <br>
+            <p>
+               Para evaluar la vulnerabilidad de la población, se seleccionaron variables que permiten medir tanto la susceptibilidad de ser picados, considerando el contexto en el que vive la población, como sus capacidades preventivas basadas en el nivel de conocimientos y acceso a medidas de prevención. Para eso, se tomaron en cuenta las condiciones de la vivienda, el nivel de estudio, la procedencia del agua y la densidad poblacional. En esta instancia de trabajo se calculó la vulnerabilidad absoluta.
+            </p>
+            <br>
+            <p>
+               Luego de recopilar dicha información, se utilizó R, un lenguaje de programación con su correspondiente entorno de software especializado en el análisis estadístico y la visualización de datos. Gracias a esta herramienta, se clasificaron los datos en intervalos que permitieron maximizar las diferencias entre los grupos por medio de rupturas naturales. Se decidió realizar este procedimiento a fin de encontrar aquellos puntos donde ocurren cambios más significativos en la distribución de los valores de las variables. Al agrupar la información en clases, se generó una mejora en la diferenciación entre los diferentes niveles. Luego, se realizó una segunda ponderación basada en criterios propios asignando un peso específico a cada una de las variables. Esto permitió adaptar la investigación a los objetivos previamente planteados. Una vez obtenidos los valores, se realizó nuevamente una ruptura natural - pero esta vez en Qgis- y se establecieron 5 niveles ya sea de amenaza como de vulnerabilidad, siendo el 1 el nivel más bajo y el 5 el nivel más alto. Esto permitió realizar una comparación de ambos componentes según cada departamento (hacia dentro de cada provincia). 
+            </p>
+            <br>
+            <p>
+               <strong>Por último</strong>, para medir el nivel de Riesgo, se sumaron ambas columnas y se estableció una escala que va del 1 al 10 utilizando como base el cuadro de doble entrada propuesto por Vazquez Brust et al. (2012).
+               <br>A fin de visualizar toda la información, se construyó cartografía temática que representa todos los datos procesados, pero en este caso a escala regional, permitiendo así establecer una comparación entre departamentos y por región.
+            </p>
+            <br>
+            <p>
+               A lo largo del trabajo existieron algunas limitaciones a considerar. Si bien se pudo acceder a datos sobre la distribución del vector <em>Aedes aegypti</em>, los mismos se encuentran definidos por departamento y no a un nivel de mayor desagregación evitando un registro geográfico más detallado. Por otro lado, si bien el enfoque se centra en la relación entre el Dengue y las condiciones socioeconómicas, entendemos que esta no siempre es directa. Existen casos reportados por otros organismos que muestran brotes en áreas no necesariamente vinculadas a bajos recursos. Este hallazgo sugiere que otros factores contextuales, como patrones de movilidad o condiciones ambientales locales, también juegan un rol importante y deberían ser integrados en futuros modelos. 
+               <br>
+               <br>
+               Más allá de estas limitaciones, consideramos que el estudio ofrece una base sólida para continuar investigando y mejorando los niveles de riesgo de Dengue, con el objetivo de desarrollar estrategias más efectivas para su prevención y control.               
+            </p>
+            <br>
+            </p>
+         </div>
+         <div id="menusup_content" class="col-xs col-sm-8 col-md-8 col-lg-8">
+            <p style="text-align:center"><img src="img/riesgo_nea_noa.jpeg" class="img-responsive center-block" alt="Resultado de análisis de riesgo de dengue para el NOA y NEA de la Argentina." /> </p>
+            <h4>Análisis de los resultados</h4>
+            <p>
+               Gracias a la construcción del indicador y el mapeo de sus resultados se puede observar la distribución espacial de los distintos niveles de riesgo de dengue en las áreas seleccionadas. En el mapa 1 se pueden apreciar los niveles más altos de riesgo de la región NOA en los departamentos ubicados al este de la provincia de Salta y Jujuy, así como también en el este de la provincia de La Rioja. Por su lado la región del NEA presenta departamentos con altos niveles de riesgo más dispersos mayormente en las provincias de Chaco y Formosa.
+               <br>
+               <br> 
+               El mapa 2  nos ayuda a interpretar los valores de riesgo del mapa 1, observando por separado sus dos componentes: los niveles de vulnerabilidad y amenazas de origen físico natural. Se distinguen las amenazas de nivel alto (es decir altas temperaturas, abundante precipitación y alto contenido de vapor de agua) distribuidas de manera homogénea en la zona del este de la región NOA, coincidiendo con el lado oriental de las cadenas montañosas. En el caso del NEA, los niveles de amenazas tienden a ser más bajos en general y distribuidos de forma más heterogénea. 
+               <br>
+               En cuanto a los niveles de vulnerabilidad se observan niveles altos en los centros más poblados como las ciudades de S. M. de Tucumán, Salta S.S. de Jujuy, S.F del Valle de Catamarca y La Rioja, relacionado a las bajas condiciones socioeconómicas y de la vivienda, y los altos niveles de densidad poblacional. Al haberse tomado los valores absolutos, los valores más altos coinciden con las zonas de mayor cantidad de población. En una segunda etapa se calcularán los valores relativos a valores regionales y provinciales.
+               <br>
+               Los mapas hasta aquí comentados muestran los resultados por región. A continuación se muestran los resultados del indicador analizados al interior de cada provincia. (Mapas 3 y 4 accesibles desde los “botones”).
+               <br>
+               <!-- Large modal -->
+            <p>
+               <br>
+               <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sinagir">Amenaza NEA y NOA</button>
+            <div class="modal fade bs-example-modal-sinagir" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+               <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                     <img src="img/amenaza_dengue.jpg" text-align="left" alt="Mapas de amenaza por provincia" style="width: 100%;">
+                  </div>
+               </div>
+            </div>
+            </p>
+            <p>
+               <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sinagir2">Vulnerabilidad NEA y NOA</button>
+            <div class="modal fade bs-example-modal-sinagir2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+               <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                     <img src="img/vulnerabilidad_dengue.jpg" text-align="left" alt="Mapas de vulnerabildiad por provincia" style="width: 100%;">
+                  </div>
+               </div>
+            </div>
+            </p>
+            <br>
+            Por otro lado, en relación a las <strong>amenazas</strong> del Noa, los departamentos con niveles más altos son: Rivadavia, General José de San Martín, Capital, Orán, Anta (Salta);  Ledesma, Santa Barbará, San Pedro, El Carmen (Jujuy);  Capital, Cruz Alta, Leales, Simoca, Graneros (Tucumán); Santa Rosa, Capital, Fray mamerto Esquiú, Valle viejo, Capayán y La paz (Catamarca); Capital, Chamical, Angel vicente Peñaloza, General Belgrano Rosario Vera Peñaloza y General Ortiz de Ocampo (La Rioja).  Por su parte, el Nea presenta una menor cantidad, los departamentos con mayores niveles son Capital, San Cosme, Itatí, Berón de Astrada y San Luis del Palmar correspondientes a Corrientes.
+            <br> 
+            <br> 
+            Asimismo, si analizamos la <strong>vulnerabilidad</strong> los departamentos con niveles más altos son Doctor Manuel Belgrano, El Carmen ( Jujuy); Capital (de Salta, Catamarca, La Rioja y Tucumán), mientras que en el Nea son Pilcomayo (Formosa); San Fernando (Chaco); y Capital (Misiones).
+            <br>
+            <br>
+            <p style="text-align:center"><img src="img/amenaza_vulnerabilidad_por_region.jpeg" class="img-responsive center-block" alt="amenaza_vulnerabilidad_por_region.jpeg" /></p>
+          
+            
+            <h3><br><strong>Bibliografía consultada</strong></h3>
+               
+               <br>
+               Carbajo, A. E., Schweigmann, N., Curto, S. I., De Garín, A., & Bejarán, R. (2001). Dengue transmission risk maps of Argentina. Tropical Medicine & International Health, 6(3), 170-183.
+               <br>
+               <br>
+               Instituto Nacional de Estadística y Censos (INDEC). (2022). Censo Nacional de Población, Hogares y Viviendas 2022: Resultados definitivos. Recuperado de <a href="https://censo.gob.ar/" target="_blank">https://censo.gob.ar/</a>
+               <br>
+               <br>
+               Morandeira, N. S., Castesana, P. S., Cardo, M. V., Salomone, V. N., Vadell, M. V., & Rubio, A. (2019). An interdisciplinary approach to assess human health risk in an urban environment: a case study in temperate Argentina. Heliyon, 5(10).
+               <br>
+               <br>
+               Vazquez Brust, D. A.; Natenzon, C. E.; de Burgos Jimenez, J.; Plaza Ubeda, J. A.; Lopez, S. D. (2012) “Evaluating the Firm's Environmental Risk: A Conceptual Framework”. En: Business and Environmental Risk, Spatial Interactions between environmental hazards and social vulnerabilities in Ibero-América. Vazquez Brust, D. A; Plaza-Úbeda, J. A.; Burgos-Jiménez, J. de; Natenzon, C.E. (eds.) Springer Dordrecht Heidelberg London, New York.
+            </p>
+            </p>
+         </div>
+      </div>
+      <br>
+      </div>
+      </div>
+      <footer class="container-fluid text-center full-width hidden-xs">
+         <div class="col-sm-6 col-xs-7">
+            <div style="float: left; padding: 5px;">
+               <a target="_blank" href="http://www.ign.gob.ar/"><img src="img/ign-logo-footer.svg" style="height:65px"></a>
+               <a target="_blank" href="https://www.argentina.gob.ar/defensa"><img src="img/logo mindef - blanco- variable 1.svg" style="height:65px"></a>
+            </div>
+         </div>
+         <div class="col-sm-6 col-xs-7">
+            <div style="float: right; padding: 5px;">
+               <a target="_blank" href="https://www.facebook.com/institutogeograficonacional"><img src="img/redes-blanco-01.svg" style="height:50px"></a>
+               <a target="_blank" href="https://twitter.com/ARGENTINAIGN"><img src="img/redes-blanco-02.svg" style="height:50px"></a>
+               <a target="_blank" href="https://www.instagram.com/argentinaignoficial/"><img src="img/redes-blanco-03.svg" style="height:50px"></a>
+               <a target="_blank" href="https://www.youtube.com/user/IgnArgentina"><img src="img/redes-blanco-04.svg" style="height:50px"></a>
+            </div>
+         </div>
+      </footer>
+      <footer class="container-fluid text-center full-width visible-xs">
+         <div class="col" style="padding:0px">
+            <div style="float: left; padding: 20px;">
+               <a target="_blank" href="http://www.ign.gob.ar/"><img src="http://anida.ign.gob.ar/img/ign-logo-footer.svg" style="height:40px"></a>
+               <a target="_blank" href="https://www.argentina.gob.ar/defensa"><img src="img/logo mindef - blanco- variable 1.svg" style="height:40px"></a>
+            </div>
+         </div>
+         <div class="col" style="float: right;">
+            <div style="float: right; padding: 20px;">
+               <a target="_blank" href="https://www.facebook.com/institutogeograficonacional"><img src="http://anida.ign.gob.ar/img/redes-blanco-01.svg" style="height:20px"></a>
+               <a target="_blank" href="https://twitter.com/ARGENTINAIGN"><img src="http://anida.ign.gob.ar/img/redes-blanco-02.svg" style="height:20px"></a>
+               <a target="_blank" href="https://www.instagram.com/argentinaignoficial/"><img src="http://anida.ign.gob.ar/img/redes-blanco-03.svg" style="height:20px"></a>
+               <a target="_blank" href="https://www.youtube.com/user/IgnArgentina"><img src="http://anida.ign.gob.ar/img/redes-blanco-04.svg" style="height:20px"></a>
+            </div>
+         </div>
+      </footer>
+   </body>
+</html>
