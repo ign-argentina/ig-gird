@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <title>Indicador de impacto de Incendios forestales</title>
+      <!-- Google Tag Manager -->
+      <script>(function (w, d, s, l, i) {
+         w[l] = w[l] || []; w[l].push({
+           'gtm.start':
+             new Date().getTime(), event: 'gtm.js'
+         }); var f = d.getElementsByTagName(s)[0],
+           j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+             'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+         })(window, document, 'script', 'dataLayer', 'GTM-5V366L3');
+      </script>
+      <!-- End Google Tag Manager -->
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+      <meta name="description" content="Base de datos oficial y normalizada de Información Geoespacial de Gestión Integral de Riesgo de Desastres del Instituto Geográfico Nacional.">
+      <meta name="author" content="Información Geoespacial de Gestión Integral de Riesgo de Desastres del Instituto Geográfico Nacional" />
+      <meta name="keywords" Content="riesgo,desastres, gestion, IGN, geografia" />
+      <meta property="og:type" content="website">
+      <meta property="og:locale" content="es_AR">
+      <meta property="og:title" content="Información Geoespacial de Gestión de Riesgo de Desastres">
+      <meta property="og:site_name" content="Información Geoespacial de Gestión Integral de Riesgo de Desastres">
+      <meta property="og:description" content="Base de datos oficial y normalizada de IG de GIR del Instituto Geográfico Nacional">
+      <meta property="og:url" content="https://riesgo.ign.gob.ar/">
+      <meta property="og:image" itemprop="image" content="https://riesgo.ign.gob.ar/img/opengraph.jpg">
+      <meta property="og:image:secure_url" itemprop="image" content="https://riesgo.ign.gob.ar/img/opengraph.jpg">
+      <meta property="og:image:type" content="image/jpeg" />
+      <meta property="og:image:width" content="256" />
+      <meta property="og:image:height" content="256" />
+      <meta property="og:image:alt" content="Logo del Instituto Geográfico Nacional" />
+      <link rel="icon" type="image/png" sizes="196x196" href="img/favicon-196x196.png">
+      <link rel="shortcut icon" href="img/favicon.ico">
+      <link rel="canonical" href="https://riesgo.ign.gob.ar/">
+      <link rel="alternate" hreflang="x-default" href="https://riesgo.ign.gob.ar/">
+      <link rel="stylesheet" href="css/main.css">
+      <script src="https://anida.ign.gob.ar/js/jquery-3.3.1.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      <!-- Script para gráficos -->
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <!-- Plugin para etiquetas fijas -->
+      <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+      <!-- <script src="http://10.20.200.72/tmp/poncho_para_idera.css"></script> -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+      <style>
+         /* Remove the navbar's default margin-bottom and rounded borders */
+         .navbar {
+         margin-bottom: 0;
+         border-radius: 3px;
+         background-color: #364b60;
+         border-color: #364b60;
+         }
+         /* Add a gray background color and some padding to the footer */
+         footer {
+         background-color: #364b60;
+         }
+         /* IMPORTANTE */
+         /*        text-align: center; } */
+      </style>
+   </head>
+   <body>
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5V366L3" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+      <!-- Menú superior -->
+      <a id="inicio"></a>
+      <nav class="navbar navbar-inverse">
+         <div class="container-fluid">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand" href="index.html"><img src="img/icono_home.svg" style="width: 25px; padding-top:0%"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+               <ul class="nav navbar-nav">
+                  <li><a href="acercade.html">Acerca de IG-GIRD</a></li>
+                  <li><a href="antecedentes.html">Antecedentes</a></li>
+                  <li><a href="mapeos_participativos.html">Cartografía participativa</a></li>
+                  <li><a href="proyectos_especiales.html">Proyectos especiales</a></li>
+                  <li><a href="contacto.html">Contacto y equipo</a></li>
+               </ul>
+               <!-- login derecho <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                  </ul>-->
+            </div>
+         </div>
+      </nav>
+      <div id="menusup_titlezone" class="jumbotron">
+         <h3><a href="index.html" style="color:#e1a346;">IG-GIRD / </a><a href="proyectos_especiales.html" style="color:#e1a346;">Proyectos especiales / </a><a href="incendios_parque_nacional.html" style="color:#e1a346;">Desarrollo de un Indicador de impacto de Incendios forestales en Argentina
+            </a>
+         </h3>
+         <h2>
+         Desarrollo de un Indicador de <br>impacto de Incendios forestales en Argentina
+         <h2>
+      </div>
+      <br>
+      <div class="row" style="background-color:#fafafa; padding:0px 20px 150px 20px;margin: 0;">
+         <div id="menusup_copete" class="col-xs col-sm-4 col-md-4 col-lg-4">
+            <p id="anida_hoy_descripcion">
+               <br> Los incendios forestales representan una de las principales perturbaciones ecológicas en los ecosistemas terrestres, provocando transformaciones significativas en la cobertura vegetal. Su impacto no solo afecta a la biodiversidad y los servicios ecosistémicos, sino que también plantea desafíos para la recuperación de los paisajes afectados. Este trabajo analiza dos eventos de incendios ocurridos en parques nacionales con el objetivo de evaluar la recuperación de la vegetación en cada caso y generar conocimiento sobre los procesos de recuperación ecológica y las diferencias en la respuesta de los ecosistemas.
+            </p>
+            <br>
+            <p>
+            <h4>Objetivos</h4>
+            <p>
+            <ul>
+               <li>Identificar y evaluar áreas afectadas por incendios forestales ocurridos en Parques Nacionales de Argentina en el período 2010-2015.</li>
+               <li>Analizar la recuperación de la cobertura vegetal en las áreas quemadas en un lapso de diez años.</li>
+            </ul>
+            <canvas id="ndviChart" style="width: 100%; max-width: 900px; margin: auto; display: inline-flex;"></canvas>
+            <script>
+               // Datos
+               const labels = ["Junio 2013", "Diciembre 2013", "Enero 2015", "Abril 2015", "Febrero 2016", "Mayo 2016", "Febrero 2018", "Marzo 2018", "Enero 2019", "Febrero 2019", "Enero 2021", "Febrero 2021", "Enero 2022", "Enero 2024", "Febrero 2024"];
+               
+               const calileguaValues = [
+                   0.362, 0.194, null, null, null, 0.423, null, 0.461, 0.449, null, 0.33, null, 0.446, 0.505 // Valores de Calilegua
+               ];
+               
+               const lagoPueloValues = [
+                   null, null, 0.301, 0.052, 0.077, null, 0.173, null, null, 0.179, null, 0.167, 0.173, null, 0.172 // Valores de Lago Puelo
+               ];
+               
+               new Chart("ndviChart", {
+                   type: "line",
+                   data: {
+                       labels: labels,
+                       datasets: [
+                           {
+                               label: "Calilegua",
+                               data: calileguaValues,
+                               borderColor: "rgba(255, 159, 64, 1)", // Naranja brillante
+                               backgroundColor: "rgba(255, 159, 64, 0.2)", // Naranja traslúcido
+                               pointRadius: 5,
+                               pointBackgroundColor: "rgba(255, 159, 64, 1)",
+                               fill: false,
+                               spanGaps: true, // Esta propiedad conecta los puntos saltando los valores null
+                               borderWidth: 2
+                           },
+                           {
+                               label: "Lago Puelo",
+                               data: lagoPueloValues,
+                               borderColor: "rgba(255, 99, 71, 1)", // Naranja rojizo
+                               backgroundColor: "rgba(255, 99, 71, 0.2)", // Naranja rojizo traslúcido
+                               pointRadius: 5,
+                               pointBackgroundColor: "rgba(255, 99, 71, 1)",
+                               fill: false,
+                               spanGaps: true, // Esta propiedad conecta los puntos saltando los valores null
+                               borderWidth: 2
+                           }
+                       ]
+                   },
+                   options: {
+                       responsive: true,
+                       plugins: {
+                           title: {
+                               display: true,
+                               text: "Fig. 1 Evolución del NDVI en Calilegua y Lago Puelo"
+                           },
+                           legend: {
+                               display: true,
+                               position: "top"
+                           }
+                       },
+                       scales: {
+                           y: {
+                               beginAtZero: false,
+                               title: {
+                                   display: true,
+                                   text: "NDVI"
+                               },
+                               suggestedMin: 0.0,
+                               suggestedMax: 0.6
+                           },
+                           x: {
+                               title: {
+                                   display: true,
+                                   text: "Año"
+                               }
+                           }
+                       }
+                   }
+               });
+            </script>
+            <br>
+            <p> Fuente: Elaboración propia con base en datos promedio de NDVI obtenidos de imágenes Landsat 8 (Level 2, Collection 2, Tier 1), correspondientes al período 2013-2024.
+               <br>
+               <br>
+            </p>
+            <h4>Materiales utilizados</h4>
+            <p> Para el desarrollo del indicador se emplearon diversos materiales y herramientas. Esto incluye Google Earth Engine (GEE), plataforma que permitió el procesamiento y análisis de imágenes satelitales que permiten calcular índices espectrales como el NBR (Normalized Burn Ratio), el DNBR (Normalized Difference Burn Ratio), y el NDVI (Normalized Difference Vegetation Index). Asimismo, como complemento se utilizó Qgis para cargar y visualizar las imágenes raster pudiendo aplicar estilos y colores según las necesidades de la representación visual de la información.
+               <br>
+               <br>
+            </p>
+            <h4>Metodología</h4>
+            <p> La metodología empleada en este indicador se divide en <strong>tres etapas</strong>:
+               <br>
+            <ul>
+               <li>Etapa de búsqueda bibliográfica sobre sucesión ecológica por incendios en ecosistemas diferentes poniendo el foco en el tiempo de recuperación tras un incendio forestal.</li>
+               <li>Etapa de identificación de casos.</li>
+               <li>Etapa del procesamiento y análisis de la información y los resultados obtenidos. En esta etapa se integraron datos provenientes de las imágenes adquiridas por el satélite Landsat 8, estimándose los siguientes índices: NBR (índice normalizado de área quemada, del inglés Normalized Burn Ratio), DNBR (diferencia del índice normalizado de área quemada, del inglés: Normalized Difference Burn Ratio) y el NDVI (Índice de Vegetación de Diferencia Normalizada, del inglés  Normalized Difference Vegetation Index).</li>
+            </ul>
+            <br>
+            <p> En la <strong>primera etapa</strong> se llevó a cabo una revisión exhaustiva de estudios previos existentes que permiten comprender cómo se han abordado los tiempos de recuperación tras un incendio y las diferentes metodologías empleadas mediante el uso de imágenes satelitales.
+               <br>
+               <br>  
+               Luego, a lo largo de la <strong>segunda etapa</strong> se identificaron dos casos que tuvieran alta cobertura de leñosas en dos biomas distintos (selva y bosque), como ser los casos de los parques nacionales Calilegua y Lago Puelo. De esta manera, se seleccionaron los focos ocurridos en el año 2013 para el caso de Calilegua y el 2015 para Lago Puelo. La selección de las áreas de análisis se justifica por los siguientes motivos, en primer lugar, ambos parques representan ecosistemas de alta relevancia ecológica y biodiversidad. Calilegua forma parte de la eco-región de las Yungas, mientras que Lago Puelo pertenece a los Bosques Patagónicos. Estos ecosistemas son prioritarios para la conservación, por lo que analizar su recuperación post-incendio aporta información valiosa sobre la resiliencia de ecosistemas críticos en Argentina. En segundo lugar, al analizar diverso tipo de documentación sobre los incendios ocurridos en ambos parques, los focos mostraban una extensión superficial importante y cumplían con haber ocurrido en la ventana temporal establecida (entre 2010 y 2015) para poder realizar la evaluación temporal, en este caso corresponden a los años 2013 y 2015. Estas fechas permitieron evaluar procesos de recuperación a mediano y largo plazo, proporcionando una perspectiva completa sobre cómo se ha regenerado la vegetación en áreas gravemente afectadas por el fuego. 
+               <br>
+               <br>  
+               En la <strong>tercera etapa</strong> se estimó el NBR pre y post incendio para evaluar la extensión del área quemada. Este índice, se estima a partir de las bandas del infrarrojo cercano (NIR del inglés Near Infrared) y el infrarrojo de onda corta (SWIR del inglés short wave Infrared), para el caso de Landsat 8 estas serían la bandas 5 y 7 respectivamente). Los valores que puede tomar el índice van entre -1 y 1, los valores más bajos indican zonas más afectadas o sin vegetación y los valores más altos indicarían zonas no afectadas. 
+               <br>
+               <br>  
+               A su vez, se calculó el DNBR para estimar la severidad de la afectación sobre la cobertura vegetal. El cálculo se realizo utilizando como referencia una imagen previa al incendio y otra inmediatamente posterior.
+               <br>
+               <br>  
+               Por último para analizar la recuperación de la cobertura vegetal se seleccionaron las áreas de mayor severidad y se estimó el NDVI en 6 imágenes correspondientes a los años: 2016, 2018, 2019, 2021, 2022 y 2024. Así se obtuvo un valor de NDVI para cada año para la zona de mayor afectación. El NDVI es un índice que se relaciona fuertemente con la cobertura vegetal y con el verdor o estado de salud de esa cobertura vegetal. Se calcula a partir de la reflectancia en longitud de onda del infrarrojo cercano (NIR) y en el rojo (red), dado que la vegetación sana, debido a la clorofila, tiene un pico de reflectancia en el NIR y un mínimo en el rojo. En Landsat 8 el NIR es la banda 5 y el rojo la banda 4. El índice puede tomar valores entre -1 y 1, los valores negativos o cercanos a cero indican agua, nieve o superficies sin vegetación, valores positivos indican un nivel creciente de cobertura vegetal y verdor de esa cobertura. Los valores promedio de NDVI se graficaron en función del año para cada parque y se analizo su temporal comportamiento. Los análisis se realizaron en la plataforma Google Earth Engine (GEE).
+               <br>
+               <br>
+            </p>
+            </p>
+         </div>
+         <div id="menusup_content" class="col-xs col-sm-8 col-md-8 col-lg-8">
+            <p style="text-align:center"><img src="img/incendios_v1.jpeg" class="img-responsive center-block" alt="incendios_v1.jpeg."/></p>
+            <h4>Análisis de los resultados</h4>
+            <p>En relación con el Parque Nacional Lago Puelo y P. N. Calilegua, se observan diferencias significativas en la topografía y la vegetación, (FIGURA 1 A y E). Calilegua presenta un relieve con pendientes más suaves que Lago Puelo pero con una vegetación más frondosa y uniforme, mientras que Lago Puelo muestra mayores pendientes, donde la vegetación crece de forma dispersa entre áreas con suelo desnudo y afloramientos rocosos.
+               <br>
+            </p>
+            <p>La superficie quemada, fue mayor para el incendio en Lago Puelo, aunque la proporción de la zona quemada dentro de cada parque nacional  fue mayor para  Calilegua. La intensidad de daño fue mayor en Lago Puelo, observándose áreas con valores de calcinación moderada y alta (Figura 2D), los cuales no se registraron en Calilegua (Figura 2 I). A su vez en Lago Puelo se observa una gran extensión para la clase de severidad baja (Figura 2 D) mientras que para Calilegua si bien el NBR indica una gran área afectada (Figura 2 H) el DNBR no la recupera y las zonas aparecen con niveles de calcinación bajos y discontinuos (Figura 2 I).
+               <br>
+               <br>
+               En cuanto a la evolución de la vegetación posterior al incendio, el análisis del NDVI revela diferencias entre ambos parques (Figura 1). En Lago Puelo, el incendio provocó una disminución de 0.25 en el índice, mientras que en Calilegua la caída fue menor, tomando un valor de 0.18. Durante el proceso de recuperación, ambos parques muestran un aumento del valor del índice los primeros años, indicando una recuperación de la cobertura vegetal. En Lago Puelo, se observa una estabilización por debajo de los valores previos al incendio a partir de 2018, es decir 3 años después del incendio, sin muestras de recuperación para los años siguientes. En cambio, en Calilegua 3 años después del incendio ya había recuperado los valores de NDVI previos al incendio. Sin embargo, este parque experimentó un retroceso en 2021, posiblemente debido a la sequía que afectó al país en ese periodo, luego volvió a crecer, alcanzando un valor 0.15 por encima del  valor del índice pre-incendio.
+               <br>
+              
+               
+            <h3><br><strong>Bibliografía</strong></h3>
+            <p>Fernández, M. C. N., Albornoz, J., Bellis, L. M., Baldini, C., Arcamone, J., Silvetti, L., ... & Argañaraz, J. P. (2023). Megaincendios 2020 en Córdoba: Incidencia del fuego en áreas de valor ecológico y socioeconómico. Ecología Austral, 33(1), 136-151.Recuperado de <a href="https://ri.conicet.gov.ar/bitstream/handle/11336/222309/CONICET_Digital_Nro.03a9628b-5dc7-4c41-9120-a057f4405747_B.pdf?sequence=2" target="_blank">https://ri.conicet.gov.ar/bitstream/handle/11336/222309/CONICET_Digital_Nro.03a9628b-5dc7-4c41-9120-a057f4405747_B.pdf?sequence=2</a></p>
+            <br>
+            <p> Chuvieco, E., & Congosto, J. A. (1995). Aplicaciones de imágenes NOAA-AVHRR al seguimiento de incendios forestales. Revista de Teledetección, (10), 15-19.</p>
+            <br>
+            <p> Comisión Nacional de Actividades Espaciales (CONAE). (n.d.). Catálogo de focos de calor MODIS. Recuperado de <a href="https://catalogos5.conae.gov.ar/catalogofocos/default.aspx" target="_blank">https://catalogos5.conae.gov.ar/catalogofocos/default.aspx</a></p>
+            <br>
+            <p>Delegido, J., Pezzola, A., Casella, A., Winschel, C., Urrego, E. P., Jimenez, J. C., & Moreno, J. (2018). Estimación del grado de severidad de incendios en el sur de la provincia de Buenos Aires, Argentina, usando Sentinel-2 y su comparación con Landsat-8. Revista de Teledetección, (51), 47-60.</p>
+            <br>
+            <p>Escobar, A., Morales, J., & Navarro, F. (2012). Recuperación de áreas quemadas: monitoreo como herramienta de restauración de zonas afectadas por incendios forestales. IX SINRAD - Simpósio Nacional sobre Recuperação de Áreas Degradadas. Rio de Janeiro – Brasil. Recuperado de <a href=" https://www.researchgate.net/publication/350923089_Recuperacion_de_areas_quemadas"target="_blank"> https://www.researchgate.net/publication/350923089_Recuperacion_de_areas_quemadas</a></p>
+            <br>
+
+            <p>Carlos Hernando Rodríguez León, Armando Sterling Cuellar, (Eds.) (2020). Sucesión ecológica y restauración en paisajes fragmentados de la Amazonia colombiana. Tomo 1. Composición, estructura y función en la sucesión secundaria. Bogotá, Colombia: Instituto Amazónico de Investigaciones Científicas SINCHI, 202.Recuperado de <a href="https://sinchi.org.co/files/publicaciones/novedades%20editoriales/pdf/sucesion%20ecologica%20tomo%201.pdf"target="_blank">https://sinchi.org.co/files/publicaciones/novedades%20editoriales/pdf/sucesion%20ecologica%20tomo%201.pdf</a></p>
+            <br>
+            <p> Escobar, A., Morales, J., & Navarro, F. (2021). Recuperación de áreas quemadas: monitoreo como herramienta de restauración de zonas afectadas por incendios forestales. Recuperado de <a href="https://www.researchgate.net/publication/350923089_Recuperacion_de_areas_quemadas" target="_blank">https://www.researchgate.net/publication/350923089_Recuperacion_de_areas_quemadas</a></p>
+            <br>
+           
+            <p>Landi, M.A., Ojeda, M. S., Di Bella, C., Salvatierra, C., & Bellis, L. M. (2017). Selección de parcelas control para estudios de la dinámica post incendio: desempeño de rutinas no paramétricas y autorregresivas . Revista de Teledetección, (49), p.79. Recuperado de <a href="http://biblio.unvm.edu.ar/opac_css/35995/1742/Landi-ojeda-DiBella-Salvatierra-arg-Bellis-Seleccion-parcelas.pdf" target="_blank">http://biblio.unvm.edu.ar/opac_css/35995/1742/Landi-ojeda-DiBella-Salvatierra-arg-Bellis-Seleccion-parcelas.pdf</a></p>
+            <br>
+            <p>Leber, Tomás. "Caracterización de los focos de calor en la Patagonia argentina y la recuperación de la vegetación post - fuego". (2018). Trabajo Final para obtener el grado de Especialista de la Universidad de Buenos Aires en Teledetección y Sistemas de Información Geográfica otorgado por la Universidad de Buenos Aires. Facultad de Agronomía. Escuela para Graduados.</p>
+            <br>
+            <p>Ministerio de Ambiente de Uruguay. (2024). Clasificar ecosistema antes (y después) del incendio para ver qué se quemó y qué se recupera luego o en qué se transforma. Recuperado de  <a href="https://www.ambiente.gub.uy/oan/documentos/Serie_InfTec_SivInformacionAmbiental_Incendios_feb2024.pdf" target="_blank">https://www.ambiente.gub.uy/oan/documentos/Serie_InfTec_SivInformacionAmbiental_Incendios_feb2024.pdf</a></p>
+            <br>
+            Olivera  Juan Marcos y Fernández Camila (2024). Evaluación de áreas quemadas mediante teledetección. Incendio cercano a la localidad de Tres Bocas, Río Negro en diciembre de 2021. Serie Técnica Big Data y Gestión Ambiental. División Información Ambiental. Dirección Nacional de Calidad y Evaluación Ambiental. Ministerio de Ambiente, Uruguay. Número V.ISBN 978-9915-9481-9-5. Recuperado de <a href=”https://www.ambiente.gub.uy/oan/documentos/Serie_InfTec_SivInformacionAmbiental_Incendios_feb2024.pdf” target="_blank">https://www.ambiente.gub.uy/oan/documentos/Serie_InfTec_SivInformacionAmbiental_Incendios_feb2024.pdf</a></p> 
+            <br>
+            <p>Pons, X., Solé-Sugrañes, L., & Estornell, J. (2006). Cadena de preprocesamiento estándar para las imágenes Landsat del Plan Nacional de Teledetección. Revista de Teledetección, (25), 95-110.</p>
+            <br>
+            <p>Rangel, O., & Velásquez, A. (1997). Métodos de estudio de vegetación. En Rangel, O., Lowy, P., & Aguilar, M. (Eds.), Colombia Diversidad Biótica II (pp. 59-87). Universidad Nacional de Colombia.</p>
+            <br>
+            <p>Sánchez, M., Baldassini, P., Fischer, M. D. L. A., Torre Zaffaroni, J., & Di Bella, C. M. (2023). Dónde, cuándo y cómo ocurren grandes incendios en la provincia de La Pampa, Argentina. Una caracterización basada en sensores remotos. Ecología Austral, 33(1), 211–228. Recuperado de <a href="https://doi.org/10.25260/EA.23.33.1.0.1972" target="_blank">https://doi.org/10.25260/EA.23.33.1.0.1972</a></p>
+            <br>
+            <p> Secretaría de Ambiente y Desarrollo Sustentable de la Nación. (2016). Análisis preliminar de focos de calor detectados con MODIS. Recuperado de <a href="https://www.argentina.gob.ar/sites/default/files/ambiente-analisispreliminarfocoscalormodis_160317_02_final.pdf" target="_blank">https://www.argentina.gob.ar/sites/default/files/ambiente-analisispreliminarfocoscalormodis_160317_02_final.pdf</a></p>
+            <br>
+            <p>Uribe, J. M., & Vásquez, F. (2022). Recuperación de la vegetación por tipo pos incendio: estudio en Chile basado en trabajo de campo. Gayana Botánica, 79(1), 1-14. Recuperado de <a href="https://www.scielo.cl/scielo.php?script=sci_arttext&pid=S0717-66432022000100010" target="_blank">https://www.scielo.cl/scielo.php?script=sci_arttext&pid=S0717-66432022000100010</a></p>
+            <br>           
+            <p>Vázquez, F. S. (1996). Principios de teledetección. EDITUM.</p>
+            <br>            
+            </p>
+         </div>
+      </div>
+      </div>
+      </div>
+      <footer class="container-fluid text-center full-width hidden-xs">
+         <div class="col-sm-6 col-xs-7">
+            <div style="float: left; padding: 5px;">
+               <a target="_blank" href="http://www.ign.gob.ar/"><img src="img/ign-logo-footer.svg" style="height:65px"></a>
+               <a target="_blank" href="https://www.argentina.gob.ar/defensa"><img src="img/logo mindef - blanco- variable 1.svg" style="height:65px"></a>
+            </div>
+         </div>
+         <div class="col-sm-6 col-xs-7">
+            <div style="float: right; padding: 5px;">
+               <a target="_blank" href="https://www.facebook.com/institutogeograficonacional"><img src="img/redes-blanco-01.svg" style="height:50px"></a>
+               <a target="_blank" href="https://twitter.com/ARGENTINAIGN"><img src="img/redes-blanco-02.svg" style="height:50px"></a>
+               <a target="_blank" href="https://www.instagram.com/argentinaignoficial/"><img src="img/redes-blanco-03.svg" style="height:50px"></a>
+               <a target="_blank" href="https://www.youtube.com/user/IgnArgentina"><img src="img/redes-blanco-04.svg" style="height:50px"></a>
+            </div>
+         </div>
+      </footer>
+      <footer class="container-fluid text-center full-width visible-xs">
+         <div class="col" style="padding:0px">
+            <div style="float: left; padding: 20px;">
+               <a target="_blank" href="http://www.ign.gob.ar/"><img src="http://anida.ign.gob.ar/img/ign-logo-footer.svg" style="height:40px"></a>
+               <a target="_blank" href="https://www.argentina.gob.ar/defensa"><img src="img/logo mindef - blanco- variable 1.svg" style="height:40px"></a>
+            </div>
+         </div>
+         <div class="col" style="float: right;">
+            <div style="float: right; padding: 20px;">
+               <a target="_blank" href="https://www.facebook.com/institutogeograficonacional"><img src="http://anida.ign.gob.ar/img/redes-blanco-01.svg" style="height:20px"></a>
+               <a target="_blank" href="https://twitter.com/ARGENTINAIGN"><img src="http://anida.ign.gob.ar/img/redes-blanco-02.svg" style="height:20px"></a>
+               <a target="_blank" href="https://www.instagram.com/argentinaignoficial/"><img src="http://anida.ign.gob.ar/img/redes-blanco-03.svg" style="height:20px"></a>
+               <a target="_blank" href="https://www.youtube.com/user/IgnArgentina"><img src="http://anida.ign.gob.ar/img/redes-blanco-04.svg" style="height:20px"></a>
+            </div>
+         </div>
+      </footer>
+   </body>
+</html>
