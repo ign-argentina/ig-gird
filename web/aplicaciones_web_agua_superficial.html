@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <title>Aplicaciones web para la determinación de agua superficial</title>
+      <!-- Google Tag Manager -->
+      <script>(function (w, d, s, l, i) {
+         w[l] = w[l] || []; w[l].push({
+           'gtm.start':
+             new Date().getTime(), event: 'gtm.js'
+         }); var f = d.getElementsByTagName(s)[0],
+           j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+             'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+         })(window, document, 'script', 'dataLayer', 'GTM-5V366L3');
+      </script>
+      <!-- End Google Tag Manager -->
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+      <meta name="description" content="Base de datos oficial y normalizada de Información Geoespacial de Gestión Integral de Riesgo de Desastres del Instituto Geográfico Nacional.">
+      <meta name="author" content="Información Geoespacial de Gestión Integral de Riesgo de Desastres del Instituto Geográfico Nacional" />
+      <meta name="keywords" Content="riesgo,desastres, gestion, IGN, geografia" />
+      <meta property="og:type" content="website">
+      <meta property="og:locale" content="es_AR">
+      <meta property="og:title" content="Información Geoespacial de Gestión de Riesgo de Desastres">
+      <meta property="og:site_name" content="Información Geoespacial de Gestión Integral de Riesgo de Desastres">
+      <meta property="og:description" content="Base de datos oficial y normalizada de IG de GIR del Instituto Geográfico Nacional">
+      <meta property="og:url" content="https://riesgo.ign.gob.ar/">
+      <meta property="og:image" itemprop="image" content="https://riesgo.ign.gob.ar/img/opengraph.jpg">
+      <meta property="og:image:secure_url" itemprop="image" content="https://riesgo.ign.gob.ar/img/opengraph.jpg">
+      <meta property="og:image:type" content="image/jpeg" />
+      <meta property="og:image:width" content="256" />
+      <meta property="og:image:height" content="256" />
+      <meta property="og:image:alt" content="Logo del Instituto Geográfico Nacional" />
+      <link rel="icon" type="image/png" sizes="196x196" href="img/favicon-196x196.png">
+      <link rel="shortcut icon" href="img/favicon.ico">
+      <link rel="canonical" href="https://riesgo.ign.gob.ar/">
+      <link rel="alternate" hreflang="x-default" href="https://riesgo.ign.gob.ar/">
+      <link rel="stylesheet" href="css/main.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      <!-- Script para gráficos -->
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <!-- Plugin para etiquetas fijas -->
+      <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+      <!-- <script src="http://10.20.200.72/tmp/poncho_para_idera.css"></script> -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+      <style>
+         /* Remove the navbar's default margin-bottom and rounded borders */
+         .navbar {
+         margin-bottom: 0;
+         border-radius: 3px;
+         background-color: #364b60;
+         border-color: #364b60;
+         }
+         /* Add a gray background color and some padding to the footer */
+         footer {
+         background-color: #364b60;
+         }
+         /* IMPORTANTE */
+         /*        text-align: center; } */
+         /*        titulo responsivo */
+         @media (max-width: 768px) {
+         #menusup_titlezone {
+         margin-bottom: 2rem;
+         padding-bottom: 1rem;
+         }
+         #menusup_copete {
+         margin-top: 1rem;
+         }
+         #menusup_titlezone h2 {
+         font-size: 1.5em;
+         line-height: 1.3em;
+         }
+         }
+      </style>
+   </head>
+   <body>
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5V366L3" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+      <!-- Menú superior -->
+      <a id="inicio"></a>
+      <nav class="navbar navbar-inverse">
+         <div class="container-fluid">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand" href="index.html"><img src="img/icono_home.svg" style="width: 25px; padding-top:0%"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+               <ul class="nav navbar-nav">
+                  <li><a href="acercade.html">Acerca de IG-GIRD</a></li>
+                  <li><a href="antecedentes.html">Antecedentes</a></li>
+                  <li><a href="mapeos_participativos.html">Cartografía participativa</a></li>
+                  <li><a href="proyectos_especiales.html">Proyectos especiales</a></li>
+                  <li><a href="contacto.html">Contacto y equipo</a></li>
+               </ul>
+               <!-- login derecho <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                  </ul>-->
+            </div>
+         </div>
+      </nav>
+      <div id="menusup_titlezone" class="jumbotron">
+         <h3><a href="index.html" style="color:#e1a346;">IG-GIRD / </a><a href="proyectos_especiales.html" style="color:#e1a346;">Proyectos especiales / </a><a href="aplicaciones_web_agua_superficial.html" style="color:#e1a346;">Aplicaciones web para la determinación de agua superficial
+            </a>
+         </h3>
+         <h2>
+         Aplicaciones web para la <br>determinación de agua superficial
+         <h2>
+      </div>
+      <br>
+      <div class="row" style="background-color:#fafafa; padding:0px 20px 150px 20px;margin: 0;">
+         <div id="menusup_copete" class="col-xs col-sm-4 col-md-4 col-lg-4">
+            <p id="anida_hoy_descripcion">
+               <br> El recurso hídrico es necesario para responder a diferentes demandas sociales; desde el agua potable para el consumo humano, hasta su empleo en la industria y la generación de energía. Por otro lado, su limitación y distribución espacial presenta un desafío en lo que respecta a la gestión de este recurso.
+               <br>
+               <br>
+               En los últimos años, la conciencia de desarrollar prácticas sostenibles para la conservación y el uso eficiente de dicho recurso ha crecido a nivel mundial, al tiempo que  se observa un aumento de la demanda y cambios en la distribución del recurso en las regiones áridas y húmedas. En este sentido, el conocimiento de la ubicación del agua superficial es importante para la gestión del recurso hídrico. Por otra parte, también son destacables los eventos hidrometeorológicos extremos relacionados a inundaciones que parecen mostrar un aumento en su frecuencia en distintos lugares del mundo. La identificación de áreas afectadas por inundaciones tras eventos climáticos extremos es fundamental para la gestión de desastres.
+               <br>
+               <br>
+               Argentina no se encuentra exenta de estos procesos, el país se caracteriza por alternar periodos secos y húmedos que se reflejan, por ejemplo, en el uso del suelo, y por presentar problemas de excesos hídricos, por sólo mencionar dos de ellos (Bontempi, 2023).
+            </p>
+            <br>
+            <p>
+            <h4>Objetivo</h4>
+            <p>
+            <ul>
+               <li> Identificar y visualizar el agua superficial en el territorio Argentino mediante aplicaciones web desarrolladas en la plataforma Google Earth Engine (GEE).</li>
+            </ul>
+            <br>
+            <h4>Metodología</h4>
+            <p> La Metodología empleada para el desarrollo de este proyecto implica:
+               <br>
+            <ul>
+               <li><strong>1. Procesamiento de Imágenes Satelitales:</strong>
+                  El procesamiento de las imágenes se realiza en GEE, una plataforma geomática basada en una nube que permite el acceso a una base de datos de imágenes satelitales ópticas, de radar de apertura sintética e información de reanálisis a gran escala y que, a su vez, posibilita el procesamiento de la información mediante la utilización de recursos de alto rendimiento computacional (Gorelik et al., 2017).
+                  <br>
+                  <br>
+                  Las imágenes empleadas son de tipo multiespectral, del satélite Sentinel 2A, estas son corregidas radiométricamente a reflectancia de superficie (“COPERNICUS/S2_SR”).
+               </li>
+               <br>
+               <li><strong>2. Selección y aplicación de Índices:</strong>
+                  Se seleccionan las imágenes ópticas mediante un filtrado de nubes, seleccionando aquellas que poseen baja nubosidad. El índice aplicado para la detección de agua es el Automated Water Extraction Index (AWEI). Se trata de un índice que permite mejorar la clasificación de áreas con sombras y superficies oscuras, como pueden ser las zonas arboladas en los márgenes de los ríos.(Feyisa et al., 2014).
+                  <br>
+                  <br>
+                  El índice se calcula mediante la siguiente ecuación: 
+                  AWEI = 4 * (GREEN - SWIR1) - (0.25 * NIR + 2,75 * SWIR2)
+               </li>
+               <br>
+               <li><strong>3. Aplicación de la técnica de Umbralización:</strong>
+                  La umbralización es una técnica de segmentación de imágenes que consiste en la aplicación de uno o más valores de umbrales de valores espectrales. Es un método de clasificación que permite distinguir diferentes regiones de interés, como por ejemplo la determinación de agua en superficie.
+                  <br>
+                  <br>
+                  En este caso de estudio, para la determinación del valor del umbral se tomaron 480 muestras espectrales de píxeles que representan el agua superficial. La extensión de la muestra fue para todo el territorio argentino y el valor medio del índice AWEI para la muestra es de -0,40. Se consideró como agua a todos los valores espectrales mayores a ésta media muestral.
+               </li>
+               <br>
+               <li><strong>4. Desarrollo de Aplicaciones Web:</strong>
+                  Se desarrollaron dos aplicaciones web en GEE a partir de un código programado en JavaScript. El código diseñado determina agua superficial en el territorio correspondiente a la República Argentina mediante la técnica de umbralización del índice multiespectral AWEI.
+                  <br>
+                  <br>
+                  A partir de esto se obtiene, por un lado, una aplicación cuyo fin es el de identificar y visualizar cobertura de agua, a partir de parámetros de periodo de tiempo y área definidos por el usuario. Por otro lado se obtiene, una segunda aplicación cuyo objetivo es comparar la cobertura agua detectada con un mosaico de imágenes del periodo de tiempo seleccionado a través de una “doble pantalla” en un área de interés. 
+            </ul>
+            <br>
+            <br>
+            </p>
+            </p>
+         </div>
+         <div id="menusup_content" class="col-xs col-sm-8 col-md-8 col-lg-8">
+            <p style="text-align:center"><img src="img/agua_superficial_figura_1.png" class="img-responsive center-block" alt="agua_superficial_figura_1.png"/> Figura 1: Aplicación web en donde se setea el periodo de fecha y el área de interés, y como resultado se obtiene una máscara de agua superficial para el periodo seleccionado.</p>
+            <h4>Análisis de los resultados</h4>
+            <p>Se desarrollaron dos aplicaciones web. El procesamiento de las imágenes, como se explicó previamente, consiste en el cálculo del índice multiespectral AWEI (Automated Water Extraction Index) para la determinación de cuerpos de agua a partir de la cual, mediante la técnica de umbralización, se genera una máscara de agua superficial, la cual puede ser visualizadas en dos aplicaciones web.
+               <br>
+               <br>
+               <strong style="color:#e1a346;">
+               Aplicación web/ Visualizador 1 para la Determinación de agua superficial 
+               </strong>
+               <br>
+            </p>
+            <p>Este visualizador permite al usuario “setear” un periodo temporal y seleccionar un área de interés sobre el cual el código diseñado permite determinar la máscara de agua superficial (Figura 1).
+               <br>
+               <br>
+               Link a Aplicación de Determinación de agua superficial: <a href="https://ee-investigacionign.projects.earthengine.app/view/deteccion-agua-por-zonas--ign---id" target="_blank">https://ee-investigacionign.projects.earthengine.app/view/deteccion-agua-por-zonas--ign---id</a>
+            </p>
+            <br>
+            <p>
+               <strong style="color:#e1a346;">
+               Aplicación web/ Visualizador 2 para la Comparación de cobertura hídrica
+               </strong>
+               <br>
+               <br>
+               Este visualizador emplea el recurso de pantalla doble, el cual permite realizar una comparación entre un mosaico de fechas seleccionadas y el estado actual del curso de agua (Figura 2).
+            <p style="text-align:center"><img src="img/agua_superficial_figura_2.png" class="img-responsive center-block" alt="agua_superficial_figura_2.png"/> Figura 2: Visualizador de pantalla doble. A la izquierda se puede observar un mosaico de imágenes de Sentinel 2 del año seleccionado; a la derecha se observa la máscara de agua generada a partir de las imágenes multiespectrales seleccionadas de la izquierda. </p>
+            <br>
+            <p> Link a Aplicación de Comparación de cobertura hídrica: <a href="https://ee-investigacionign.projects.earthengine.app/view/comparacion-mascara-de-agua-e-imagen-
+satelital-arg-ign---id" target="_blank">https://ee-investigacionign.projects.earthengine.app/view/comparacion-mascara-de-agua-e-imagen-
+satelital-arg-ign---id</a></p>
+            Esta aplicación permite visualizar los resultados en un visor interactivo y comparar visualmente dos capas o imágenes, en este caso una máscara y una imagen, de manera simultánea. Ayuda a visualizar cambios en la región, como también realizar un seguimiento de la variabilidad estacional y la identificación de cambios en la disponibilidad de agua. Asimismo, permite identificar zonas inundadas y realizar un monitoreo de las mismas a través del tiempo.
+            <br>
+            <br>
+            Además del desarrollo de las aplicaciones descritas, a través del proyecto se ha observado que el índice utilizado para la determinación de agua en superficie (AWEI), también determina, con un buen grado de exactitud, los cuerpos níveos presentes en la cordillera, debido a que el índice realza la respuesta de las bandas SWIR1, SWIR2 y GREEN que, al mismo tiempo, son bandas empleadas para la detección de nieve e hielo en el índice NDSI (Índice Normalizado de Nieve). La respuesta de sendos índices (NDSI y AWEI), resalta la respuesta espectral de las bandas correspondientes al verde y al infrarrojo. Por esto mismo, en la máscara de agua creada se puede observar una limitación de los cuerpos de hielo y nieve, que no corresponde a un cuerpo de agua superficial. Esto se puede discriminar de manera efectiva empleando el visualizador de pantalla dividida para realizar la comparación entre la máscara y la imagen multiespectral óptica.
+            </p>
+            </p>
+            <br>
+            <h4>Conclusiones</h4>
+            <p>Las aplicaciones desarrolladas resultan en herramientas útiles para cualquier estudio relacionado con el agua y su dinámica a lo largo del tiempo, ya que permite comparar imágenes ópticas, en este caso las adquiridas por el satélite Sentinel 2, y una máscara de agua en un visor dividido; facilitando así, la interpretación de datos.
+               <br>
+               <br>
+               Entre otras utilidades, estas aplicaciones, pueden usarse para el monitoreo de cuerpos de agua, la gestión de recursos hídricos en lo que respecta la disponibilidad del recurso en regiones afectadas por sequías o cambios estacionales, así como la determinación de inundaciones e identificación de áreas afectadas tras eventos climáticos extremos; lo que contribuye a a toma de decisiones basadas en imágenes satelitales.
+               <br>
+               <br>
+               Finalmente, a través del desarrollo del proyecto y específicamente de la implementación de la metodología planteada, se pueden establecer nuevas líneas de trabajo a futuro.
+            </p>
+            <h3><br><strong>Bibliografía</strong></h3>
+            <p>Bontempi, M. Eugenia. 2023. Las sequías en Argentina y sus ciclos históricos. Revista Ojo del Cóndor. Ed N°12.</p>
+           
+            <p>Feyisa, G. L., Meilby, H., Fensholt, R., & Proud, S. R. (2014). Automated Water Extraction Index: A new technique for surface water mapping using Landsat imagery. Remote sensing of environment, 140, 23-35.</p>
+            
+            <p> Gorelick, N., Hancher, M., Dixon, M., Ilyushchenko, S., Thau, D., & Moore, R. (2017). Google Earth Engine: Planetary-scale geospatial analysis for everyone. Remote sensing of Environment, 202, 18-27.</p>
+            <br>
+         </div>
+      </div>
+      </div>
+      </div>
+      <footer class="container-fluid text-center full-width hidden-xs">
+         <div class="col-sm-6 col-xs-7">
+            <div style="float: left; padding: 5px;">
+               <a target="_blank" href="http://www.ign.gob.ar/"><img src="img/ign-logo-footer.svg" style="height:65px"></a>
+               <a target="_blank" href="https://www.argentina.gob.ar/defensa"><img src="img/logo mindef - blanco- variable 1.svg" style="height:65px"></a>
+            </div>
+         </div>
+         <div class="col-sm-6 col-xs-7">
+            <div style="float: right; padding: 5px;">
+               <a target="_blank" href="https://www.facebook.com/institutogeograficonacional"><img src="img/redes-blanco-01.svg" style="height:50px"></a>
+               <a target="_blank" href="https://twitter.com/ARGENTINAIGN"><img src="img/redes-blanco-02.svg" style="height:50px"></a>
+               <a target="_blank" href="https://www.instagram.com/argentinaignoficial/"><img src="img/redes-blanco-03.svg" style="height:50px"></a>
+               <a target="_blank" href="https://www.youtube.com/user/IgnArgentina"><img src="img/redes-blanco-04.svg" style="height:50px"></a>
+            </div>
+         </div>
+      </footer>
+      <footer class="container-fluid text-center full-width visible-xs">
+         <div class="col" style="padding:0px">
+            <div style="float: left; padding: 20px;">
+               <a target="_blank" href="http://www.ign.gob.ar/"><img src="img/ign-logo-footer.svg" style="height:40px"></a>
+               <a target="_blank" href="https://www.argentina.gob.ar/defensa"><img src="img/logo mindef - blanco- variable 1.svg" style="height:40px"></a>
+            </div>
+         </div>
+         <div class="col" style="float: right;">
+            <div style="float: right; padding: 20px;">
+               <a target="_blank" href="https://www.facebook.com/institutogeograficonacional"><img src="img/redes-blanco-01.svg"style="height:40px"></a>
+               <a target="_blank" href="https://twitter.com/ARGENTINAIGN"><img src="img/redes-blanco-02.svg" style="height:40px"></a>
+               <a target="_blank" href="https://www.instagram.com/argentinaignoficial/"><img src="img/redes-blanco-03.svg" style="height:40px"></a>
+               <a target="_blank" href="https://www.youtube.com/user/IgnArgentina"><img src="img/redes-blanco-04.svg" style="height:40px"></a>
+            </div>
+         </div>
+      </footer>
+   </body>
+</html>
