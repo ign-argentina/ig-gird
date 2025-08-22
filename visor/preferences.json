@@ -140,15 +140,16 @@
     "rowsLimit": 5
   },
   "theme": {
+    "activeLayer": "#a2a09b",
     "bodyBackground": "#5B799D",
     "headerBackground": "#364b60",
+    "iconBar": "#4f4f4f",
     "menuBackground": "#364b60",
-    "activeLayer": "#6f6b61",
-    "textMenu": "white",
-    "textMenuStyle": "text-shadow: #103847 1px 1px 15px",
+    "btnColor": "white",
     "textLegendMenu": "#dddddd",
     "textLegendMenuStyle": "text-shadow: #103847 1px 1px 15px",
-    "iconBar": "#4f4f4f"
+    "textMenu": "white",
+    "textMenuStyle": "text-shadow: #103847 1px 1px 15px"
   },
   "title": "IG-GIRD",
   "website": "https://riesgo.ign.gob.ar/"
